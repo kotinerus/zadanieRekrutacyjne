@@ -1,0 +1,139 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+//APPLIED WHEN SMALLER THAN
+//SMALL
+@media (max-width: 576px) {
+  .container_fluid_navbar {
+    height: 7vw;
+    .container_fluid_navbar_logo {
+      font-size: 1.5vw;
+    }
+  }
+}
+//MEDIUM
+@media (max-width: 768px) {
+  .container_fluid_navbar {
+    height: 7vw;
+    .container_fluid_navbar_logo {
+      font-size: 1.5vw;
+    }
+  }
+}
+//LARGE
+@media (max-width: 992px) {
+  .container_fluid_navbar {
+    height: 5vw;
+    .container_fluid_navbar_logo {
+      font-size: 1.5vw;
+    }
+    .container_fluid_navbar_options {
+      svg {
+        width: 1.5vw;
+      }
+    }
+  }
+}
+
+.container_fluid_navbar {
+  position: relative;
+  height: 5vw;
+  .container_fluid_navbar_logo {
+    padding-left: 5%;
+    font-size: 1.5vw;
+  }
+  .container_fluid_navbar_options {
+    svg {
+      width: 1.5vw;
+    }
+  }
+}
+
+.intro_section_row {
+  top: 5vw;
+  width: 100vw;
+  height: 100vh;
+
+  .intro_section_row_text {
+    background-color: #dcc1ab;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .intro_section_row_text_content_box {
+      display: flex;
+      flex-direction: column;
+      height: 60%;
+      width: 80%;
+      .intro_section_row_text_content_box_text {
+        height: 70%;
+        width: 85%;
+        h2 {
+          font-size: 3.5vw;
+        }
+        p {
+          font-size: clamp(15px, 1.5vw, 18px);
+        }
+      }
+      .intro_section_row_text_content_box_buttons {
+        .btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 20px;
+          width: 35%;
+          height: 2.5vw;
+        }
+        .btn_contact {
+          position: relative;
+          background-color: #1b5b31;
+          margin-right: 0.5vw;
+          color: white;
+        }
+        .btn_dropdown {
+          border-color: #1b5b31;
+          a {
+            color: #1b5b31;
+            text-decoration: none;
+          }
+          svg {
+            width: clamp(15px, 1.5vw, 18px);
+          }
+        }
+      }
+    }
+  }
+  .intro_section_row_img {
+    height: 100vh;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .slider_buttons {
+    position: absolute;
+
+    background-color: #f5f0ec;
+    bottom: calc(0.5vh - 5vw);
+    width: 15vw;
+    height: 7vh;
+    right: 0%;
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      height: 100%;
+      svg {
+        width: clamp(2vw, 3.5vw, 3vw);
+      }
+    }
+  }
+}
+.offer_container {
+  background-color: #f5f0ec;
+  height: 100vh;
+}
