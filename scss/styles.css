@@ -12098,4 +12098,52 @@ body {
 .offer_container {
   background-color: #f5f0ec;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.offer_container .offer_container_heading {
+  position: relative;
+  top: 10%;
+  left: 20%;
+  height: 30vh;
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.offer_container .offer_container_heading h2, .offer_container .offer_container_heading .h2 {
+  font-size: 2.5vw;
+}
+.offer_container .offer_container_heading .offer_container_heading_oferta {
+  color: #1b5b31;
+  position: absolute;
+  top: 5vh;
+}
+.offer_container .offer_container_panels {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  height: 45vh;
+  width: 80vw;
+  gap: 10px;
+}
+.offer_container .offer_container_panels .panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  height: 45vh;
+  width: 30%;
+  border-radius: 30px;
+}
+.offer_container .offer_container_panels .panel .svg_icon {
+  margin: 7%;
+  width: 3vw;
+}
+.offer_container .offer_container_panels .panel h4, .offer_container .offer_container_panels .panel .h4 {
+  width: 80%;
+  color: #1b5b31;
 }/*# sourceMappingURL=styles.css.map */
