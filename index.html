@@ -13,11 +13,14 @@
     <link rel="icon" href="/icons/logo-full-light.svg">
     <!-- prettier-ignore -->
     <title>Zadanie rekrutacyjne</title>
+    
+    
   </head>
   <body>
+    
     <div class="container-fluid d-flex flex-column p-0 ">
       <div class="row justify-content-center align-items-center  welcome_container_fluid_nav p-3">
-        <div class="col-xl-7"><strong>giard</strong>design</div>
+        <div class="col-xl-7 "><strong>giard</strong>design</div>
         <div class="col-xl-1">
           <div class="dropdown">
             <button class="btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">Oferta</button>
@@ -33,15 +36,15 @@
         <div class="col-xl-1"><a href="#contact">Kontakt</a></div>
         <div class="col-xl-1"><img src="./icons/search.svg"></div>
       </div>
-      <div class="row justify-content-center align-items-center g-0 bg-beige welcome_container_fluid_content">
+      <div class="row  g-0 bg-beige welcome_container_fluid_content">
         <div class="arrowBox">
           <div class="row  g-2">
-            <img src="./icons/arrowLeft.svg" class="col-6 btn m-3">
-            <img src="./icons/arrowRight.svg" class="col-6 btn m-3">
+            <a class="col-6" href=""><img src="./icons/arrowLeft.svg" ></a>
+            <a class="col-6 " href=""><img src="./icons/arrowRight.svg"></a>
           </div>
         </div>
-        <div class="col-xl-6 ">
-          <div class="container w-75 d-flex flex-column justify-content-center align-items-start">
+        <div class="col-xl-6 d-flex justify-content-center">
+          <div class="container w-75 d-flex flex-column justify-content-center align-items-start ">
             <h2>Nowoczesna<br>aranżacja<br>Twojego ogrodu </h2>
           <p class="w-75">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
         <div class="row justify-content-evenly align-items-center w-75 g-2">
@@ -104,8 +107,25 @@
 
   
 </div></section>
-<section id="endProduct" class="container-fluid endproduct_section_fluid vh-100 p-0">
-  TEST
+<section id="endProduct" class="container-fluid h-auto endproduct_section_fluid  p-0 " >
+  <div class="container-fluid d-flex w-75 flex-column justify-content-center align-items-start endproduct_section_fluid_text">
+   <p class="text-green">Realizacje </p>
+   <h2 class="">Nasze projekty</h2>
+  </div>
+  <div class="macy" >
+    <img src="./imgsForLayout/Photo-8.png" a>
+    <img src="./imgsForLayout/Photo-7.png" >
+    <img src="./imgsForLayout/Photo-6.png" >
+    <img src="./imgsForLayout/Photo-5.png" >
+    <img src="./imgsForLayout/Photo-4.png" >
+    <img src="./imgsForLayout/Photo-3.png" >
+    <img src="./imgsForLayout/Photo-2.png" >
+    <img src="./imgsForLayout/Photo-1.png" >
+    <img src="./imgsForLayout/Photo.png" >
+  </div>
+    
+  </div>
+  
 </section>
 
 <section id="contact" class="container-fluid contact_section_fluid d-flex vh-50 justify-content-center align-items-center p-0 ">
@@ -142,7 +162,8 @@
       <div class="col-6 text-end">made by<img src="./icons/logo-full-light.svg"></div>
     </div>
 </footer>
-  
+<script src="./node_modules/macy/dist/macy.js"></script>
+    <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

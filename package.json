@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.1",
+    "macy": "^2.5.1",
     "sass": "^1.65.1"
   }
 }

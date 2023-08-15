@@ -12167,4 +12167,10 @@ a:hover {
 
 .endproduct_section_fluid {
   background-color: #dcc1ab;
+}
+.endproduct_section_fluid .endproduct_section_fluid_text {
+  height: 30vh;
+}
+.endproduct_section_fluid .macy img {
+  width: 30%;
 }/*# sourceMappingURL=styles.css.map */
