@@ -164,24 +164,35 @@ body {
     position: relative;
     top: 10%;
     left: 10%;
-
     height: 45vh;
     width: 80vw;
     gap: 10px;
     .panel {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
       background-color: #ffffff;
-      height: 45vh;
+      height: 50vh;
       width: 30%;
       border-radius: 30px;
-      .svg_icon {
-        margin: 7%;
-        width: 3vw;
+      .panel_content {
+        position: relative;
+        display: flex;
+        top: 10%;
+        left: 10%;
+        flex-direction: column;
+
+        height: 80%;
+        width: 80%;
+        .svg_icon {
+          margin-bottom: 3rem;
+          width: 3vw;
+        }
       }
-      svg {
+
+      h3 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.3rem;
+        margin-bottom: 7rem;
       }
       h4 {
         width: 80%;

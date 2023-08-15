@@ -12130,18 +12130,30 @@ body {
   gap: 10px;
 }
 .offer_container .offer_container_panels .panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   background-color: #ffffff;
-  height: 45vh;
+  height: 50vh;
   width: 30%;
   border-radius: 30px;
 }
-.offer_container .offer_container_panels .panel .svg_icon {
-  margin: 7%;
+.offer_container .offer_container_panels .panel .panel_content {
+  position: relative;
+  display: flex;
+  top: 10%;
+  left: 10%;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+}
+.offer_container .offer_container_panels .panel .panel_content .svg_icon {
+  margin-bottom: 3rem;
   width: 3vw;
+}
+.offer_container .offer_container_panels .panel h3, .offer_container .offer_container_panels .panel .h3 {
+  font-size: 3rem;
+}
+.offer_container .offer_container_panels .panel p {
+  font-size: 1.3rem;
+  margin-bottom: 7rem;
 }
 .offer_container .offer_container_panels .panel h4, .offer_container .offer_container_panels .panel .h4 {
   width: 80%;
