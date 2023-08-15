@@ -10,124 +10,139 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/scss/styles.css" />
+    <link rel="icon" href="/icons/logo-full-light.svg">
     <!-- prettier-ignore -->
-    <title>Hello, world!</title>
+    <title>Zadanie rekrutacyjne</title>
   </head>
   <body>
-    
-      <nav class="row  align-items-center g-2  container_fluid_navbar">
-        <div class="col-lg-7 container_fluid_navbar_logo"><strong>giard</strong>design</div>
-        <div class="col-lg-5 container_fluid_navbar_options">
-          <div class="row justify-content-evenly align-items-center g-2">
-            <div class="col-2">
-              <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button"id="dropdownMenuButton1" data-bs-toggle="dropdown">
-                  Oferta
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Projekty</a></li>
-                  <li><a class="dropdown-item" href="#">Wizualizacje</a></li>
-                  <li><a class="dropdown-item" href="#">Realizacje</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-2">O firmie</div>
-            <div class="col-2">Realizacje</div>
-            <div class="col-2">Kontakt</div>
-            <!-- prettier-ignore -->
-            <div class="col-2">
-              <svg xmlns="http://www.w3.org/2000/svg"width="32"height="32"fill="currentColor"class="bi bi-search"viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg>
-            </div>
+    <div class="container-fluid d-flex flex-column p-0 ">
+      <div class="row justify-content-center align-items-center  welcome_container_fluid_nav p-3">
+        <div class="col-xl-7"><strong>giard</strong>design</div>
+        <div class="col-xl-1">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">Oferta</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#offer">Projekty</a></li>
+              <li><a class="dropdown-item" href="#offer">Wizualizacje</a></li>
+              <li><a class="dropdown-item" href="#offer">Realizacje</a></li>
+            </ul>
           </div>
         </div>
-    </nav>
-   <section class="row w-100 g-0  intro_section_row">
-    <div class="slider_buttons"><div class="row  g-2">
-      <div class="col-6 btn"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-      </svg></div>
-      <div class="col-6 btn"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-      </svg></div>
-    </div></div>
-    <div class="col-6 intro_section_row_text">
-      <div class="intro_section_row_text_content_box">
-        <div class="intro_section_row_text_content_box_text">
-          <h2 class="mb-5">Nowoczesna aranżacja<br>Twojego ogrodu </h2>
-          <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
-        </div>
-        <div class="row g-2  intro_section_row_text_content_box_buttons">
-          <div class="col-xxl-5 btn btn_contact">Skontaktuj się z nami</div>
-          <div class="col-xxl-5 btn btn_dropdown">
-            <a href="#">Zobacz nasze realizacje 
-              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+        <div class="col-xl-1"><a href="#about">O firmie</a></div>
+        <div class="col-xl-1"><a href="#endProduct">Realizacje</a></div>
+        <div class="col-xl-1"><a href="#contact">Kontakt</a></div>
+        <div class="col-xl-1"><img src="./icons/search.svg"></div>
       </div>
-    </div>
-    <div class="col-6 intro_section_row_img">
-      <img src="./img_grass.jpg" class="img-fluid">
-    </div>
-   </section>
-<section class="container-fluid offer_container">
-  <div class="offer_container_heading">
-    <p class="offer_container_heading_oferta">Oferta</p>
-    <h2>Działamy kompleksowo</h2>
-    <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+      <div class="row justify-content-center align-items-center g-0 bg-beige welcome_container_fluid_content">
+        <div class="arrowBox">
+          <div class="row  g-2">
+            <img src="./icons/arrowLeft.svg" class="col-6 btn m-3">
+            <img src="./icons/arrowRight.svg" class="col-6 btn m-3">
+          </div>
+        </div>
+        <div class="col-xl-6 ">
+          <div class="container w-75 d-flex flex-column justify-content-center align-items-start">
+            <h2>Nowoczesna<br>aranżacja<br>Twojego ogrodu </h2>
+          <p class="w-75">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+        <div class="row justify-content-evenly align-items-center w-75 g-2">
+          <div class="col-xxl-6"><a class="btn btn-green w-100 rounded-5" href="#contact" >Skontaktuj się z nami</a></div>
+          <div class="col-xxl-6"><a class="btn  btn-white border-5  w-100 rounded-5" href="" >Skontaktuj się z nami <img  src="./icons/Vector_down.svg" alt=""></a></div>
+        </div>  
+        </div>
+        </div>
+       <img src="./img/img_grass.jpg" class="img-fluid  col-xl-6">
+      </div>
+<div id="offer"class="container-fluid d-flex flex-column bg-second vh-100 offer_container_fluid_heading">
+ <div class="container-fluid d-flex flex-column justify-content-center align-items-start   w-75 offer_container_fluid_heading_text">
+      <p class="mb-5 text-green">Oferta</p>
+      <h2 class="mb-5">Działamy kompleksowo</h2>
+      <h5 class="w-75">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </h5>
   </div>
-  <div class="offer_container_panels">
-    <div class="row justify-content-between align-items-center g-2">
-      <div class="col-4 panel">
-        <div class="panel_content">
-        <svg class="svg_icon" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-        </svg>
-        <h3 class="mb-3">Projekty</h3>
-        <p >Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
-        <h4>Dowiedz się więcej <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-        </svg></h4>
-      </div>
-      </div>
-      <div class="col-4 panel">
-        <div class="panel_content">
-        <svg class="svg_icon" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-          <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-        </svg>
-        <h3 class="mb-3">Wizualizacje</h3>
-        <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
-        <h4>Dowiedz się więcej <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-        </svg></h4>
-        </div>
-      </div>
-      <div class="col-4 panel">
-        <div class="panel_content">
-        <svg  class="svg_icon"xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
-        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
-        </svg>
-        <h3 class="mb-3">Realizacje</h3>
-        <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
-        <div class="btn"><h4>Zobacz nasze realizacje <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-        </svg></h4></div>
-      </div>
+ <div class="container-fluid d-flex justify-content-center vh-50 offer_container_fluid_panels">
+  <div class="row d-flex justify-content-around  g-2 w-100">
+    <div class="col-3">
+      <div class="d-flex flex-column justify-content-center align-items-start h-100 rounded-5  bg-white panel">
+        <img src="./icons/pencil.svg"class='m-3' >
+        <h2> Projekty</h2>
+        <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+        <p class="btn text-green">Dowiedz się więcej<img src="./icons/Vector.svg" class="vector"></p>
       </div>
     </div>
+    <div class="col-3">
+      <div class="d-flex flex-column justify-content-center align-items-start h-100 rounded-5  bg-white panel">
+        <img src="./icons/eye.svg" alt="">
+        <h2> Wizualizacje</h2>
+        <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+        <p class="btn text-green">Dowiedz się więcej<img src="./icons/Vector.svg" class="vector" ></p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="d-flex flex-column justify-content-center align-items-start h-100 rounded-5  bg-white panel">
+        <img src="./icons/stars.svg" alt="">
+        <h2> Realizacje</h2>
+        <p class="">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+       <p class="btn text-green"> Zobacz nasze realizacje <img src="./icons/Vector.svg"class="vector" ></p>
+      </div>
+    </div>
+  </div>
+ </div>
 </div>
-</section>
-  
+<!-- TERAZ PRACUJE NAD TYM -->
+<div id="about" class="container-fluid bg-green  g-0  vh-100">
+  <div class="row g-0">
+    <img src="./img/house.png" class="img-fluid vh-100 col-xl-6" loading="lazy">
+    <div class="col-xl-6 d-flex flex-column justify-content-center align-items-center">
+      <div class="container text-white  about_container ">
+      <p >O firmie</p>
+      <h2 class="mb-5 h-25"><i>Tworzymy <br>z pasją</i></h2>
+      <p class="mb-5 main_text">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+      <a class="btn rounded-5 btn-green" href="#" >Poznaj nas bliżej <img src="./icons/arrow-right.svg"></a></div>
+    </div>
+  </div>
+</div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+
+  
+</div></section>
+<section id="endProduct" class="container-fluid endproduct_section_fluid vh-100 p-0">
+  TEST
+</section>
+
+<section id="contact" class="container-fluid contact_section_fluid d-flex vh-50 justify-content-center align-items-center p-0 ">
+ <div class="row h-80 w-75 bg-green text-white p-2 g-2">
+  <div class="col-8 d-flex justify-content-center align-items-center ">
+    <h2>Zostańmy w kontakcie! <br>Znajdziesz nas na <i>Instagramie</i>.</h2>
+  </div>
+  <div class="col-4 d-flex flex-column justify-content-center align-items-start">
+    <p>Śledź nasze najnowsze realizacje!</p>
+    <a  class="btn bg-white rounded-5 btn-white">Instagram</a></div>
+  </div>
+</section>
+
+<!-- JEST PERFEKCYJNIE. NIE RUSZAJ JUŻ TEGO -->
+<footer id="footer" class="container-fluid footer_fluid d-flex flex-column bg-black vh-50 text-white justify-content-center align-items-center">
+  <div class="container d-flex flex-column justify-content-center  w-75">
+    <div class="row justify-content-center align-items-center g-2 mb-5">
+      <div class="col-6"><strong>giard</strong>design</div>
+      <div class="col-3 text-end">Daj znać, co możemy dla Ciebie zrobić!</div>
+      <div class="col-3"><a class="btn btn-green rounded-5 position-relative l-25 w-75 ">Skontaktuj się z nami</a></div>
+    </div>
+    <hr>
+   <div class="row justify-content-center align-items-center g-2 mt-5">
+      <div class="col-1">Kontakt</div>
+      <div class="col-1">Instagram</div>
+      <div class="col-1">Facebook</div>
+      <div class="col-1">LinkedIn</div>
+      <div class="col-4"></div>
+      <div class="col-2">000-000-000</div>
+      <div class="col-2">giarddesign@kontakt.pl</div>
+    </div>
+    <div class="row justify-content-center align-items-center g-2 pt-5 mt-5">
+      <div class="col-6">Prawa zastrzeżone © 2022</div>
+      <div class="col-6 text-end">made by<img src="./icons/logo-full-light.svg"></div>
+    </div>
+</footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
