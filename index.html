@@ -18,10 +18,21 @@
   </head>
   <body>
     
-    <div class="container-fluid d-flex flex-column p-0 ">
-      <div class="row justify-content-center align-items-center  welcome_container_fluid_nav p-3">
-        <div class="col-xl-7 "><strong>giard</strong>design</div>
-        <div class="col-xl-1">
+    <div class="container-fluid d-flex flex-column p-0 welcome_container_fluid">
+      <div class="row justify-content-center align-items-center p-3 welcome_container_fluid_nav">
+        <div class="col-7 "><strong>giard</strong>design</div>
+        <div class="col-5 d-flex d-xl-none justify-content-end align-items-center">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">Oferta</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#about">O firmie</a></li>
+              <li><a class="dropdown-item" href="#offer">Oferta</a></li>
+              <li><a class="dropdown-item" href="#endProduct">Realizacje</a></li>
+              <li><a class="dropdown-item" href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-1 d-none d-xl-flex">
           <div class="dropdown">
             <button class="btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">Oferta</button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -31,30 +42,41 @@
             </ul>
           </div>
         </div>
-        <div class="col-xl-1"><a href="#about">O firmie</a></div>
-        <div class="col-xl-1"><a href="#endProduct">Realizacje</a></div>
-        <div class="col-xl-1"><a href="#contact">Kontakt</a></div>
-        <div class="col-xl-1"><img src="./icons/search.svg"></div>
+        <div class="col-xl-1 d-none d-xl-flex"><a href="#about">O firmie</a></div>
+        <div class="col-xl-1 d-none d-xl-flex"><a href="#endProduct">Realizacje</a></div>
+        <div class="col-xl-1 d-none d-xl-flex"><a href="#contact">Kontakt</a></div>
+        <div class="col-xl-1 d-none d-xl-flex"><img src="./icons/search.svg"></div>
       </div>
       <div class="row  g-0 bg-beige welcome_container_fluid_content">
-        <div class="arrowBox d-flex justify-content-center bg-second">
-          <div class="row  g-2">
-            <a class="col-6" href=""><img src="./icons/arrowLeft.svg" ></a>
-            <a class="col-6 " href=""><img src="./icons/arrowRight.svg"></a>
+        <div class="col-xl-6 d-flex justify-content-center align-items-center welcome_container_fluid_content_area">
+          <div class="container d-flex flex-column w-75  justify-content-center align-items-start welcome_container_fluid_content_area_text ">
+            <h2 class="w-75">Nowoczesna aranżacja<br>Twojego ogrodu</h2>
+            <p class="w-75 mt-3">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+            <div class="row justify-content-evenly align-items-center w-75 g-2 welcome_container_fluid_content_area_text_btn_row">
+              <div class="col-6 "><a class="btn btn-green w-100  mb-2 rounded-5" href="#contact" >Skontaktuj się z nami</a></div>
+              <div class="col-6"><a class="btn border-green text-green mb-2 w-100 rounded-5" href="" >Skontaktuj się z nami <img  src="./icons/Vector_down.svg" alt=""></a></div>
+            </div>  
           </div>
         </div>
-        <div class="col-xl-6 d-flex justify-content-center">
-          <div class="container w-75 d-flex flex-column justify-content-center align-items-start ">
-            <h2>Nowoczesna<br>aranżacja<br>Twojego ogrodu </h2>
-          <p class="w-75">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
-        <div class="row justify-content-evenly align-items-center w-75 g-2">
-          <div class="col-xxl-6"><a class="btn btn-green w-100 rounded-5" href="#contact" >Skontaktuj się z nami</a></div>
-          <div class="col-xxl-6"><a class="btn  btn-white border-5  w-100 rounded-5" href="" >Skontaktuj się z nami <img  src="./icons/Vector_down.svg" alt=""></a></div>
-        </div>  
+
+       <img src="./img/img_grass.jpg" class="img-fluid col-6 d-none d-xl-flex">
+       <div class="container-fluid d-flex d-xl-none justify-content-center h-50 align-items-center">
+        <img src="./img/img_grass.jpg" class="img-fluid h-100 ">
+       </div>
+
+       <div class="container-fluid d-flex d-xl-none justify-content-center align-items-center bg-second w-25">
+          <a class="btn d-flex align-items-center justify-content-center col-6 "><img class="img_arrow" src="./icons/arrowLeft.svg"></a>
+          <a class="btn d-flex align-items-center justify-content-center col-6 "><img class="img_arrow" src="./icons/arrowRight.svg"></a>
+       </div>
+        <div class="container-fluid d-none d-xl-flex justify-content-center align-items-center bg-second  arrowBox">
+          <a class="btn d-flex align-items-center justify-content-center col-6 "><img src="./icons/arrowLeft.svg"></a>
+          <a class="btn d-flex align-items-center justify-content-center col-6 "><img src="./icons/arrowRight.svg"></a>
         </div>
-        </div>
-       <img src="./img/img_grass.jpg" class="img-fluid  col-xl-6">
       </div>
+    </div>
+
+
+
 <div id="offer"class="container-fluid d-flex flex-column bg-second vh-100 offer_container_fluid_heading">
  <div class="container-fluid d-flex flex-column justify-content-center align-items-start   w-75 offer_container_fluid_heading_text">
       <p class="mb-5 text-green">Oferta</p>
@@ -89,8 +111,10 @@
     </div>
   </div>
  </div>
-</div>
+</div> 
+
 <!-- TERAZ PRACUJE NAD TYM -->
+
 <div id="about" class="container-fluid bg-green  g-0  vh-100">
   <div class="row g-0">
     <img src="./img/house.png" class="img-fluid vh-100 col-xl-6" loading="lazy">
@@ -106,8 +130,8 @@
 
 
   
-</div></section>
-<section id="endProduct" class="container-fluid d-flex flex-column  endproduct_section_fluid  p-0 " >
+
+ <section id="endProduct" class="container-fluid d-flex flex-column  endproduct_section_fluid  p-0 " >
   <div class="container-fluid d-flex w-75  flex-column justify-content-center align-items-start endproduct_section_fluid_text">
    <p class="text-green">Realizacje </p>
    <h2 class="">Nasze projekty</h2>
@@ -124,9 +148,9 @@
     <img src="./imgsForLayout/Photo.png" >
   </div>
   <div class="container-fluid gradient_top"></div>
- 
-  
 </section>
+  
+
 
 <section id="contact" class="container-fluid contact_section_fluid d-flex vh-50 justify-content-center align-items-center p-0 ">
  <div class="row h-80 w-75 bg-green text-white p-2 g-2">
@@ -139,7 +163,10 @@
   </div>
 </section>
 
-<!-- JEST PERFEKCYJNIE. NIE RUSZAJ JUŻ TEGO -->
+
+
+
+
 <footer id="footer" class="container-fluid footer_fluid d-flex flex-column bg-black vh-50 text-white justify-content-center align-items-center">
   <div class="container d-flex flex-column justify-content-center  w-75">
     <div class="row justify-content-center align-items-center g-2 mb-5">
