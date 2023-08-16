@@ -12087,11 +12087,9 @@ a:hover {
   width: 15%;
   right: 0%;
   height: 5vw;
-  display: flex;
-  justify-content: center;
-  background-color: #F5F0EC;
 }
 .arrowBox img {
+  margin: 0 1rem;
   width: 3.5rem;
   height: 3.5rem;
 }
@@ -12122,7 +12120,7 @@ a:hover {
 }
 
 .offer_container_fluid_heading h2, .offer_container_fluid_heading .h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .offer_container_fluid_heading h5, .offer_container_fluid_heading .h5 {
   font-size: 1.5rem;
@@ -12140,7 +12138,7 @@ a:hover {
   height: 3.5rem;
 }
 .offer_container_fluid_panels .panel .vector {
-  width: 1.5rem;
+  width: clamp(1rem, 7vh, 1.3rem);
 }
 .offer_container_fluid_panels .panel .text-green {
   text-decoration: underline;
@@ -12167,10 +12165,18 @@ a:hover {
 
 .endproduct_section_fluid {
   background-color: #dcc1ab;
+  height: 200vh;
+  overflow: hidden;
 }
 .endproduct_section_fluid .endproduct_section_fluid_text {
   height: 30vh;
 }
 .endproduct_section_fluid .macy img {
   width: 30%;
+}
+.endproduct_section_fluid .gradient_top {
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), rgba(220, 193, 171, 0.5));
+  height: 200vh;
+  width: 100vw;
 }/*# sourceMappingURL=styles.css.map */

@@ -105,10 +105,8 @@ a:hover {
   width: 15%;
   right: 0%;
   height: 5vw;
-  display: flex;
-  justify-content: center;
-  background-color: #F5F0EC;
   img{
+    margin: 0 1rem;
     width: 3.5rem;
     height: 3.5rem;
   }
@@ -141,7 +139,7 @@ a:hover {
 //NEXT
 .offer_container_fluid_heading{
   h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   h5{
     font-size: 1.5rem;
@@ -160,7 +158,7 @@ a:hover {
       height: 3.5rem;
     }
     .vector{
-      width: 1.5rem;
+      width: clamp(1rem, 7vh, 1.3rem)
     }
     .text-green{
       text-decoration: underline;
@@ -192,13 +190,23 @@ a:hover {
 
 .endproduct_section_fluid {
   background-color: #dcc1ab;
+  height: 200vh;
+  
+  overflow: hidden;
   .endproduct_section_fluid_text{
     height: 30vh;
   }
  .macy{
+  
   img{
     width: 30%;
   }
  }
+ .gradient_top{
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(#dcc1ab,0), rgba(#dcc1ab,0.5));
+  height: 200vh;
+  width: 100vw;
+}
  
 }
