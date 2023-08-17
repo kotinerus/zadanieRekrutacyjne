@@ -171,7 +171,7 @@ a:hover {
         
       }
       .btn{
-        border: none !important;
+        border: 1px solid #1b5b31 !important;
       }
       .img_arrow{
         height: clamp(1rem, 7vh, 2rem);
@@ -182,19 +182,19 @@ a:hover {
 }
 
 
-//NEXT
+
 .offer_container_fluid_heading{
   h2{
     font-size: 2.5rem;
   }
   h5{
     font-size: 1.5rem;
+    width: 60% !important;
   }
   .offer_container_fluid_heading_text{
     height: 40vh;
   }
 }
-
 .offer_container_fluid_panels{
   .panel{
     padding-left: 5%;
@@ -211,7 +211,47 @@ a:hover {
     }
   }
 }
-//
+@media screen and (max-width: 1200px) {
+  .offer_container_fluid_heading{
+    height: 25% !important;
+    .offer_container_fluid_heading_text{
+      h2{
+        font-size: 3rem;
+        text-align: center;
+      }
+      h5{
+        font-size: 1rem;
+        width: 100% !important;
+      }
+    }
+  }
+
+  .offer_container_fluid_panels{
+    height: 75% !important;
+    .panel{
+      padding-left: 5%;
+      left: 5%;
+      align-items: center !important;
+      img{
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      .vector{
+        width: clamp(1rem, 7vh, 1.3rem)
+      }
+      .text-green{
+        text-decoration: underline;
+      }
+      p{
+        font-size: 1.1rem;
+        width: 75% !important;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
 .about_container{
  width: 70%;
  height: 60%;

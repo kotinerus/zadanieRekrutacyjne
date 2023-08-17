@@ -12146,7 +12146,7 @@ a:hover {
     width: 100% !important;
   }
   .welcome_container_fluid .welcome_container_fluid_content .btn {
-    border: none !important;
+    border: 1px solid #1b5b31 !important;
   }
   .welcome_container_fluid .welcome_container_fluid_content .img_arrow {
     height: clamp(1rem, 7vh, 2rem);
@@ -12158,6 +12158,7 @@ a:hover {
 }
 .offer_container_fluid_heading h5, .offer_container_fluid_heading .h5 {
   font-size: 1.5rem;
+  width: 60% !important;
 }
 .offer_container_fluid_heading .offer_container_fluid_heading_text {
   height: 40vh;
@@ -12178,6 +12179,42 @@ a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1200px) {
+  .offer_container_fluid_heading {
+    height: 25% !important;
+  }
+  .offer_container_fluid_heading .offer_container_fluid_heading_text h2, .offer_container_fluid_heading .offer_container_fluid_heading_text .h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .offer_container_fluid_heading .offer_container_fluid_heading_text h5, .offer_container_fluid_heading .offer_container_fluid_heading_text .h5 {
+    font-size: 1rem;
+    width: 100% !important;
+  }
+  .offer_container_fluid_panels {
+    height: 75% !important;
+  }
+  .offer_container_fluid_panels .panel {
+    padding-left: 5%;
+    left: 5%;
+    align-items: center !important;
+  }
+  .offer_container_fluid_panels .panel img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .offer_container_fluid_panels .panel .vector {
+    width: clamp(1rem, 7vh, 1.3rem);
+  }
+  .offer_container_fluid_panels .panel .text-green {
+    text-decoration: underline;
+  }
+  .offer_container_fluid_panels .panel p {
+    font-size: 1.1rem;
+    width: 75% !important;
+    text-align: center;
+  }
+}
 .about_container {
   width: 70%;
   height: 60%;
