@@ -1,1 +1,2 @@
 Zmienić fonty na rem
+Pozmieniać rozmiary stron

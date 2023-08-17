@@ -252,10 +252,8 @@ a:hover {
 }
 
 
+
 .about_container{
- width: 70%;
- height: 60%;
- 
  h2{
   font-size: 3rem;
  }
@@ -269,11 +267,33 @@ a:hover {
  img{
   color: white;
   width: 2rem;
-  
+  .about_container_text_area{
+    width: 75% ;
+  }
  }
 }
+@media screen and (max-width: 1200px) {
+  .about_container_fluid{
+    h2{
+     font-size: 3rem;
+     text-align: center;
+    }
+    h5{
+      font-size: 0.9rem;
+    }
+    .main_text{
+     font-size: 1rem;
+    }
+   
+  }
+  .about_container_link{
+    img{
+      width: clamp(1rem, 7vh, 1.3rem)
+    }
+   
+  }
+}
 //
-
 .endproduct_section_fluid {
   background-color: #dcc1ab;
   height: 200vh;

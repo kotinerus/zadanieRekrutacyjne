@@ -12215,10 +12215,6 @@ a:hover {
     text-align: center;
   }
 }
-.about_container {
-  width: 70%;
-  height: 60%;
-}
 .about_container h2, .about_container .h2 {
   font-size: 3rem;
 }
@@ -12233,7 +12229,25 @@ a:hover {
   color: white;
   width: 2rem;
 }
+.about_container img .about_container_text_area {
+  width: 75%;
+}
 
+@media screen and (max-width: 1200px) {
+  .about_container_fluid h2, .about_container_fluid .h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about_container_fluid h5, .about_container_fluid .h5 {
+    font-size: 0.9rem;
+  }
+  .about_container_fluid .main_text {
+    font-size: 1rem;
+  }
+  .about_container_link img {
+    width: clamp(1rem, 7vh, 1.3rem);
+  }
+}
 .endproduct_section_fluid {
   background-color: #dcc1ab;
   height: 200vh;
