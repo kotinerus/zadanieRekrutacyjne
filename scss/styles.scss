@@ -139,9 +139,69 @@ a:hover {
     img{
       height: 100%;
     }
-    .swiper{
-      position: relative !important;
+  
+    .swiper [class^="swiper-button-"]{
+      top: initial;
+      background-color: #F5F0EC;
+      width: 15%;
+      height: 10%;
+      color: black;
+      bottom: 0;
+      background-position: center;
+        background-image: url(../icons/arrowLeft.svg);
+        background-repeat: no-repeat;
+        background-size: 3rem;
     }
+    .swiper {
+      .swiper-button-next::after, .swiper-button-prev::after {
+        content: "";
+    }
+    
+      .swiper-button-prev{
+        background-image: url(../icons/arrowLeft.svg);
+        left: 70%;
+        
+      }
+      .swiper-button-next{
+       
+        background-image: url(../icons/arrowRight.svg);
+        background-repeat: no-repeat;
+        background-size: 3rem;
+      
+    }
+  }
+@media screen and (max-width: 1200px) {
+    .swiper [class^="swiper-button-"]{
+      top: initial;
+      background-color: #F5F0EC;
+      width: 15%;
+      height: 10%;
+      color: black;
+      bottom: -1%;
+
+      background-position: center;
+        background-image: url(../icons/arrowLeft.svg);
+        background-repeat: no-repeat;
+        background-size: 3rem;
+    }
+    .swiper {
+      .swiper-button-next::after, .swiper-button-prev::after {
+        content: "";
+    }
+    
+      .swiper-button-prev{
+        background-image: url(../icons/arrowLeft.svg);
+        left: 35%;
+        
+      }
+      .swiper-button-next{
+       
+        background-image: url(../icons/arrowRight.svg);
+        right: 35%;
+      
+    }
+  }
+}
     .arrowBox{
       position: absolute;
       bottom: 0%;
@@ -184,9 +244,6 @@ a:hover {
       .welcome_container_fluid_content_area_text_btn_row{
         width: 100% !important;
         
-      }
-      .btn{
-        // border: none !important;
       }
       .img_arrow{
         height: clamp(1rem, 7vh, 2rem);

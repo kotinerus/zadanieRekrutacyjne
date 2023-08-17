@@ -16,17 +16,7 @@ const swiper = new Swiper(".swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: "#leftArrow",
-    prevEl: "#rightArrow",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
-
-// elemenet.textContent = `<a id="rightArrow" class="btn d-flex border-none align-items-center justify-content-center col-6 "><img src="./icons/arrowLeft.svg"></a>
-// <a id="leftArrow" class="btn d-flex border-none align-items-center justify-content-center col-6 "><img src="./icons/arrowRight.svg"></a>`;
-
-// const swipper = document.querySelectorAll(".swiper-slide");
-// for (let index = 0; index < swipper.length; index++) {
-//   console.log(elemenet);
-//   swipper[index].appendChild(elemenet);
-//   console.log(swipper[index]);
-// }

@@ -12117,8 +12117,54 @@ a:hover {
 .welcome_container_fluid .welcome_container_fluid_content img {
   height: 100%;
 }
-.welcome_container_fluid .welcome_container_fluid_content .swiper {
-  position: relative !important;
+.welcome_container_fluid .welcome_container_fluid_content .swiper [class^=swiper-button-] {
+  top: initial;
+  background-color: #F5F0EC;
+  width: 15%;
+  height: 10%;
+  color: black;
+  bottom: 0;
+  background-position: center;
+  background-image: url(../icons/arrowLeft.svg);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+}
+.welcome_container_fluid .welcome_container_fluid_content .swiper .swiper-button-next::after, .welcome_container_fluid .welcome_container_fluid_content .swiper .swiper-button-prev::after {
+  content: "";
+}
+.welcome_container_fluid .welcome_container_fluid_content .swiper .swiper-button-prev {
+  background-image: url(../icons/arrowLeft.svg);
+  left: 70%;
+}
+.welcome_container_fluid .welcome_container_fluid_content .swiper .swiper-button-next {
+  background-image: url(../icons/arrowRight.svg);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+}
+@media screen and (max-width: 1200px) {
+  .welcome_container_fluid .welcome_container_fluid_content .swiper [class^=swiper-button-] {
+    top: initial;
+    background-color: #F5F0EC;
+    width: 15%;
+    height: 10%;
+    color: black;
+    bottom: -1%;
+    background-position: center;
+    background-image: url(../icons/arrowLeft.svg);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+  }
+  .welcome_container_fluid .welcome_container_fluid_content .swiper .swiper-button-next::after, .welcome_container_fluid .welcome_container_fluid_content .swiper .swiper-button-prev::after {
+    content: "";
+  }
+  .welcome_container_fluid .welcome_container_fluid_content .swiper .swiper-button-prev {
+    background-image: url(../icons/arrowLeft.svg);
+    left: 35%;
+  }
+  .welcome_container_fluid .welcome_container_fluid_content .swiper .swiper-button-next {
+    background-image: url(../icons/arrowRight.svg);
+    right: 35%;
+  }
 }
 .welcome_container_fluid .welcome_container_fluid_content .arrowBox {
   position: absolute;
