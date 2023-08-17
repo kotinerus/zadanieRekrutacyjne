@@ -12173,7 +12173,7 @@ a:hover {
   width: 60% !important;
 }
 .offer_container_fluid_heading .offer_container_fluid_heading_text {
-  height: 40vh;
+  height: 40% !important;
 }
 
 .offer_container_fluid_panels .panel {
@@ -12194,6 +12194,9 @@ a:hover {
 @media screen and (max-width: 1200px) {
   .offer_container_fluid_heading {
     height: 25% !important;
+  }
+  .offer_container_fluid_heading .offer_container_fluid_heading_text {
+    width: 100% !important;
   }
   .offer_container_fluid_heading .offer_container_fluid_heading_text h2, .offer_container_fluid_heading .offer_container_fluid_heading_text .h2 {
     font-size: 3rem;

@@ -201,7 +201,7 @@ a:hover {
     width: 60% !important;
   }
   .offer_container_fluid_heading_text{
-    height: 40vh;
+    height: 40% !important;
   }
 }
 .offer_container_fluid_panels{
@@ -224,6 +224,7 @@ a:hover {
   .offer_container_fluid_heading{
     height: 25% !important;
     .offer_container_fluid_heading_text{
+      width: 100% !important;
       h2{
         font-size: 3rem;
         text-align: center;
