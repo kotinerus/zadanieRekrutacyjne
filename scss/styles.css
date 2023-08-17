@@ -12132,6 +12132,9 @@ a:hover {
 }
 
 @media screen and (max-width: 1200px) {
+  .welcome_container_fluid {
+    height: auto !important;
+  }
   .welcome_container_fluid .welcome_container_fluid_nav {
     font-size: clamp(1rem, 7vh, 1.3rem);
   }
@@ -12155,7 +12158,7 @@ a:hover {
     width: 100% !important;
   }
   .welcome_container_fluid .welcome_container_fluid_content .btn {
-    border: 1px solid #1b5b31 !important;
+    border: none !important;
   }
   .welcome_container_fluid .welcome_container_fluid_content .img_arrow {
     height: clamp(1rem, 7vh, 2rem);
