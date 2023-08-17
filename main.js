@@ -5,9 +5,6 @@ var myInstance = new Macy({
   margin: 50,
   columns: 3,
   breakAt: {
-    1120: 3,
-    992: 3,
-    768: 2,
-    480: 1,
+    1200: 1,
   },
 });

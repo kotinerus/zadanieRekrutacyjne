@@ -12029,6 +12029,10 @@ a:hover {
   height: 50vh !important;
 }
 
+.w-12_5 {
+  width: 12.5% !important;
+}
+
 .h-80 {
   height: 80% !important;
 }
@@ -12234,34 +12238,52 @@ a:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  .about_container_fluid h2, .about_container_fluid .h2 {
+  #about {
+    height: auto !important;
+  }
+  #about .about_container_fluid h2, #about .about_container_fluid .h2 {
     font-size: 3rem;
     text-align: center;
   }
-  .about_container_fluid h5, .about_container_fluid .h5 {
+  #about .about_container_fluid h5, #about .about_container_fluid .h5 {
     font-size: 0.9rem;
   }
-  .about_container_fluid .main_text {
+  #about .about_container_fluid .main_text {
     font-size: 1rem;
   }
-  .about_container_link img {
+  #about .about_container_link img {
     width: clamp(1rem, 7vh, 1.3rem);
   }
 }
-.endproduct_section_fluid {
+#endProduct {
   background-color: #dcc1ab;
-  height: 200vh;
+  height: 100vh;
   overflow: hidden;
 }
-.endproduct_section_fluid .endproduct_section_fluid_text {
-  height: 30vh;
+#endProduct .link_button img {
+  width: 1rem;
 }
-.endproduct_section_fluid .macy img {
+#endProduct .endproduct_text {
+  height: 30%;
+}
+#endProduct .macy img {
   width: 30%;
 }
-.endproduct_section_fluid .gradient_top {
+#endProduct .gradient_top {
   position: absolute;
   background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), rgba(220, 193, 171, 0.5));
-  height: 200vh;
+  height: 100vh;
   width: 100vw;
+}
+
+@media screen and (max-width: 1200px) {
+  #endProduct .endproduct_text {
+    text-align: center;
+  }
+  #endProduct .link_button {
+    width: 50% !important;
+  }
+  #endProduct .link_button img {
+    width: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
