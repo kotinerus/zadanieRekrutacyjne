@@ -112,7 +112,10 @@ a:hover {
 }
 //POCZĄTEK
 
-
+// .swiper {
+//   width: 10%;
+//   height: 10%;
+// }
 
 .welcome_container_fluid{
   height: 100vh;
@@ -136,11 +139,13 @@ a:hover {
     img{
       height: 100%;
     }
-   
+    .swiper{
+      position: relative !important;
+    }
     .arrowBox{
       position: absolute;
       bottom: 0%;
-      width: 15%;
+      width: 30%;
       right: 0%;
       height: 5vw;
       img{
@@ -281,6 +286,9 @@ a:hover {
   .about_container_text_area{
     width: 75% ;
   }
+ }
+ h5{
+  font-size: 1.5rem;
  }
 }
 @media screen and (max-width: 1200px) {

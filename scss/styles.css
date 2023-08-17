@@ -12117,10 +12117,13 @@ a:hover {
 .welcome_container_fluid .welcome_container_fluid_content img {
   height: 100%;
 }
+.welcome_container_fluid .welcome_container_fluid_content .swiper {
+  position: relative !important;
+}
 .welcome_container_fluid .welcome_container_fluid_content .arrowBox {
   position: absolute;
   bottom: 0%;
-  width: 15%;
+  width: 30%;
   right: 0%;
   height: 5vw;
 }
@@ -12244,6 +12247,9 @@ a:hover {
 }
 .about_container img .about_container_text_area {
   width: 75%;
+}
+.about_container h5, .about_container .h5 {
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1200px) {
