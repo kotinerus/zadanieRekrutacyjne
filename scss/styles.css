@@ -11974,8 +11974,13 @@ textarea.form-control-lg {
 body {
   margin: 0px;
   padding: 0px;
+  overflow-y: hidden;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 .btn {
