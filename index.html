@@ -17,9 +17,11 @@
   <body>
    
     <!-- DONE -->
-    <div class="container-fluid d-flex flex-column p-0 g-0">
+   
       
-    
+ 
+  
+ 
 <!-- ################################################## -->
 <!-- WELCOME CONTAINER -->
 <!-- ################################################## -->
@@ -135,8 +137,8 @@
       <a class="btn rounded-5 btn-green" href="#" >Poznaj nas bliżej <img src="./icons/arrow-right.svg"></a></div>
     </div>
 
-    <div class="container-fluid d-flex  flex-column justify-content-center align-items-start w-75 text-white about_container_fluid">
-      <p class="mb-xl-5 mb-sm-0  ">O firmie</p>
+    <div class="container-fluid d-flex d-lg-none  flex-column justify-content-center align-items-start w-75 text-white about_container_fluid">
+      <p class="mb-xl-5 mb-sm-3 mt-sm-5 ">O firmie</p>
       <h2 class="mb-xl-3  mb-sm-0 w-100">Tworzymy z pasją</h2>
       <h5 class="w-75 mt-3 w-100">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</h5>
     </div>
@@ -148,14 +150,16 @@
 
 
   
-<!-- CIP -->
- <section id="endProduct" class="container-fluid d-flex flex-column align-items-center p-0 " >
+
+<!-- ################################################## -->
+<!-- ENDPRODUCT CONTAINER -->
+<!-- ################################################## -->
+ <section id="endProduct" class="container-fluid  d-flex flex-column align-items-center p-0" >
   <div class="container-fluid d-flex flex-column justify-content-center align-items-start w-75 h-25  endproduct_text">
    <p class="text-green">Realizacje </p>
    <h2 class="w-100">Nasze projekty</h2>
   </div>
- 
-  <div class="container-fluid h-75 macy " >
+  <div class="container-fluid w-100 h-75 macy" >
     <img src="./imgsForLayout/Photo-8.png" a>
     <img src="./imgsForLayout/Photo-7.png" >
     <img src="./imgsForLayout/Photo-6.png" >
@@ -166,28 +170,46 @@
     <img src="./imgsForLayout/Photo-1.png" >
     <img src="./imgsForLayout/Photo.png" >
   </div>
-
-  <div class="container-fluid gradient_top d-flex justify-content-center align-items-end">
+  <div class="container-fluid gradient_top d-flex justify-content-center align-items-end p-0">
     <div class="btn rounded-5 w-12_5 mb-3 border-black text-black link_button">Rozwiń <img src="./icons/arrow-down.svg" ></div>
   </div>
-  
-</div>
-
 </section>
+
+<!-- ################################################## -->
+<!-- CONTACT CONTAINER -->
+<!-- ################################################## -->
 <!-- CIP -->
 
+<section id="contact" class="container-fluid contact_section_fluid d-none d-lg-flex vh-50 justify-content-center align-items-center p-0 ">
+  <div class="row  h-80 w-75 bg-green text-white p-2 g-2">
+    <div class="col-8 d-flex justify-content-center align-items-center ">
+      <h2>Zostańmy w kontakcie! <br>Znajdziesz nas na <i>Instagramie</i>.</h2>
+    </div>
+    <div class="col-4 d-flex flex-column justify-content-center align-items-start">
+      <p>Śledź nasze najnowsze realizacje!</p>
+      <a  class="btn bg-white rounded-5 btn-white">Instagram</a>
+    </div>
+  </div>
+</section>
 
-<!-- <section id="contact" class="container-fluid contact_section_fluid d-flex vh-50 justify-content-center align-items-center p-0 ">
- <div class="row h-80 w-75 bg-green text-white p-2 g-2">
-  <div class="col-8 d-flex justify-content-center align-items-center ">
-    <h2>Zostańmy w kontakcie! <br>Znajdziesz nas na <i>Instagramie</i>.</h2>
+<div class="container-fluid d-flex d-lg-none flex-column vh-50 bg-green text-white   container_fluid_text ">
+    <div class="container-fluid d-flex  justify-content-center align-items-end h-50 ">
+      <h2 class="text-center">Zostańmy w kontakcie!<br>Znajdziesz nas na <i></i>Instagramie.</i></h2>
+    </div>
+    <div class="container-fluid d-flex  flex-column justify-content-center align-items-center h-50">
+      <p>Śledź nasze najnowsze realizacje!</p>
+      <a  class="btn bg-white rounded-5 btn-white">Instagram</a>
+    </div>
   </div>
-  <div class="col-4 d-flex flex-column justify-content-center align-items-start">
-    <p>Śledź nasze najnowsze realizacje!</p>
-    <a  class="btn bg-white rounded-5 btn-white">Instagram</a></div>
-  </div>
+
+<!-- <section id="contact" class="container-fluid contact_section_fluid d-flex vh-50   justify-content-center align-items-center p-0 ">
+  
+  
+
+  
+
 </section> -->
-
+<!-- CIP -->
 
 
 
@@ -214,7 +236,7 @@
       <div class="col-6 text-end">made by<img src="./icons/logo-full-light.svg"></div>
     </div>
 </footer> -->
-</div>
+
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

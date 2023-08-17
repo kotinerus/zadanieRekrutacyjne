@@ -12286,4 +12286,17 @@ a:hover {
   #endProduct .link_button img {
     width: 1rem;
   }
+}
+#contact h2, #contact .h2 {
+  font-size: 2.5rem;
+}
+#contact p {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-widths: 1200px) {
+  #contact .container_fluid_text h2, #contact .container_fluid_text .h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
