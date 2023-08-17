@@ -12050,6 +12050,10 @@ a:hover {
   color: #1b5b31;
 }
 
+.border-none {
+  border: none !important;
+}
+
 .border-green {
   border: solid 1px #1b5b31 !important;
 }
@@ -12113,9 +12117,6 @@ a:hover {
 .welcome_container_fluid .welcome_container_fluid_content img {
   height: 100%;
 }
-.welcome_container_fluid .welcome_container_fluid_content .btn {
-  border: solid 1px #1b5b31 !important;
-}
 .welcome_container_fluid .welcome_container_fluid_content .arrowBox {
   position: absolute;
   bottom: 0%;
@@ -12156,9 +12157,6 @@ a:hover {
   }
   .welcome_container_fluid .welcome_container_fluid_content .welcome_container_fluid_content_area_text_btn_row {
     width: 100% !important;
-  }
-  .welcome_container_fluid .welcome_container_fluid_content .btn {
-    border: none !important;
   }
   .welcome_container_fluid .welcome_container_fluid_content .img_arrow {
     height: clamp(1rem, 7vh, 2rem);

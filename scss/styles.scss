@@ -73,6 +73,9 @@ a:hover {
 .text-green {
   color: #1b5b31;
 }
+.border-none{
+  border: none !important;
+}
 .border-green{
   border: solid 1px #1b5b31 !important;
 }
@@ -133,9 +136,7 @@ a:hover {
     img{
       height: 100%;
     }
-    .btn{
-      border: solid 1px #1b5b31 !important;
-    }
+   
     .arrowBox{
       position: absolute;
       bottom: 0%;
@@ -180,7 +181,7 @@ a:hover {
         
       }
       .btn{
-        border: none !important;
+        // border: none !important;
       }
       .img_arrow{
         height: clamp(1rem, 7vh, 2rem);
