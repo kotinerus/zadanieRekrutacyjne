@@ -5,7 +5,10 @@ const myInstance = new Macy({
   margin: 25,
   columns: 3,
   breakAt: {
-    1200: 1,
+    1200: {
+      margin: { x: 10, y: 20 },
+      columns: 1,
+    },
   },
 });
 

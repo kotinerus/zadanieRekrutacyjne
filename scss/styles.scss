@@ -207,9 +207,35 @@ body {
     }
   }
 }
-
+#endProduct {
+  height: 100vh;
+  img {
+    width: 1rem;
+  }
+  .gradient_top {
+    position: absolute;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(#dcc1ab, 0),
+      rgba(#dcc1ab, 0.5)
+    );
+    height: 100%;
+    width: 100%;
+  }
+}
+#contact {
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  #footer {
+    //PLACEHOLDER
+  }
+}
 //  ##################################################
-//  SMALL STYLES - START
+//  SMALL STYLES
 //  ##################################################
 @media screen and (max-width: 1200px) {
   #welcomeContainer {
@@ -275,75 +301,17 @@ body {
       }
     }
   }
-}
-
-#endProduct {
-  background-color: #dcc1ab;
-  height: 100vh;
-
-  .link_button {
-    img {
-      width: 1rem;
-    }
-  }
-
-  .endproduct_text {
-    height: 30%;
-  }
-  .macy {
-    // height: 75% !important;
-
-    img {
-      width: 30%;
-    }
-  }
-  .gradient_top {
-    position: absolute;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(#dcc1ab, 0),
-      rgba(#dcc1ab, 0.5)
-    );
-    height: 100%;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
   #endProduct {
-    .endproduct_text {
+    h2 {
       text-align: center;
     }
     .macy {
       width: 75% !important;
     }
-    .link_button {
-      width: 50% !important;
-      img {
-        width: 1rem;
-      }
-    }
   }
-}
-#contact {
-  h2 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1.3rem;
-  }
-}
-@media screen and (max-widths: 1200px) {
   #contact {
-    .container_fluid_text {
-      h2 {
-        font-size: 2rem;
-        text-align: center;
-      }
-    }
+    //PLACEHOLDER
   }
-}
-@media screen and (max-widths: 1200px) {
   #footer {
     text-align: center !important;
   }

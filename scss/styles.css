@@ -12162,6 +12162,25 @@ body .btn-green:hover {
   font-size: 1.3rem;
 }
 
+#endProduct {
+  height: 100vh;
+}
+#endProduct img {
+  width: 1rem;
+}
+#endProduct .gradient_top {
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), rgba(220, 193, 171, 0.5));
+  height: 100%;
+  width: 100%;
+}
+
+#contact h2, #contact .h2 {
+  font-size: 2.5rem;
+}
+#contact p {
+  font-size: 1.3rem;
+}
 @media screen and (max-width: 1200px) {
   #welcomeContainer {
     height: auto !important;
@@ -12222,55 +12241,12 @@ body .btn-green:hover {
   #aboutContainer .about_container_fluid a img {
     width: 1.3rem;
   }
-}
-#endProduct {
-  background-color: #dcc1ab;
-  height: 100vh;
-}
-#endProduct .link_button img {
-  width: 1rem;
-}
-#endProduct .endproduct_text {
-  height: 30%;
-}
-#endProduct .macy img {
-  width: 30%;
-}
-#endProduct .gradient_top {
-  position: absolute;
-  background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), rgba(220, 193, 171, 0.5));
-  height: 100%;
-  width: 100%;
-}
-
-@media screen and (max-width: 1200px) {
-  #endProduct .endproduct_text {
+  #endProduct h2, #endProduct .h2 {
     text-align: center;
   }
   #endProduct .macy {
     width: 75% !important;
   }
-  #endProduct .link_button {
-    width: 50% !important;
-  }
-  #endProduct .link_button img {
-    width: 1rem;
-  }
-}
-#contact h2, #contact .h2 {
-  font-size: 2.5rem;
-}
-#contact p {
-  font-size: 1.3rem;
-}
-
-@media screen and (max-widths: 1200px) {
-  #contact .container_fluid_text h2, #contact .container_fluid_text .h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-@media screen and (max-widths: 1200px) {
   #footer {
     text-align: center !important;
   }
