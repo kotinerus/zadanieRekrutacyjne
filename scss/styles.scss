@@ -25,6 +25,15 @@ body {
   .w-12_5 {
     width: 12.5% !important;
   }
+  .w-70 {
+    width: 70% !important;
+  }
+  .h-40 {
+    height: 40% !important;
+  }
+  .h-60 {
+    height: 60% !important;
+  }
   .h-80 {
     height: 80% !important;
   }
@@ -158,8 +167,33 @@ body {
     }
   }
 }
+#offerContainer {
+  h2 {
+    font-size: 2.5rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  .offer_container_fluid_panels {
+    .panel {
+      padding-left: 5%;
+      left: 5%;
+      img {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      .vector {
+        width: clamp(1rem, 7vh, 1.3rem);
+      }
+      .text-green {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 //  ##################################################
-//  SMALL STYLES
+//  SMALL STYLES - START
 //  ##################################################
 @media screen and (max-width: 1200px) {
   #welcomeContainer {
@@ -184,73 +218,27 @@ body {
       }
     }
   }
-}
-
-.offer_container_fluid_heading {
-  h2 {
-    font-size: 2.5rem;
-  }
-  h5 {
-    font-size: 1.5rem;
-    width: 60% !important;
-  }
-  .offer_container_fluid_heading_text {
-    height: 40% !important;
-  }
-}
-.offer_container_fluid_panels {
-  .panel {
-    padding-left: 5%;
-    left: 5%;
-    img {
-      width: 3.5rem;
-      height: 3.5rem;
-    }
-    .vector {
-      width: clamp(1rem, 7vh, 1.3rem);
-    }
-    .text-green {
-      text-decoration: underline;
-    }
-  }
-}
-@media screen and (max-width: 1200px) {
-  .offer_container_fluid_heading {
+  #offerContainer {
     height: 25% !important;
-    .offer_container_fluid_heading_text {
-      width: 75% !important;
-      h2 {
-        font-size: 3rem;
-        text-align: center;
-      }
-      h5 {
-        font-size: 1rem;
-        width: 100% !important;
-      }
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      align-self: center;
     }
-  }
-
-  .offer_container_fluid_panels {
-    height: 75% !important;
+    h5 {
+      font-size: 1rem;
+      width: 100% !important;
+    }
+    p {
+      font-size: 1.3rem;
+      width: 75% !important;
+      text-align: start;
+    }
+    .p_text {
+      text-align: center;
+    }
     .panel {
-      padding-left: 5%;
-      left: 5%;
       align-items: center !important;
-      img {
-        width: 3.5rem;
-        height: 3.5rem;
-      }
-      .vector {
-        width: clamp(1rem, 7vh, 1.3rem);
-      }
-      .text-green {
-        text-decoration: underline;
-      }
-      p {
-        font-size: 1.1rem;
-        width: 75% !important;
-        text-align: center;
-      }
     }
   }
 }
