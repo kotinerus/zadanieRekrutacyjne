@@ -171,7 +171,9 @@ body {
   }
 }
 #offerContainer {
-  opacity: 0;
+  position: relative;
+  // opacity: 0;
+  right: -100vw;
   h2 {
     font-size: 2.5rem;
   }
@@ -196,7 +198,8 @@ body {
   }
 }
 #aboutContainer {
-  opacity: 0;
+  position: relative;
+  left: -100vw;
   .about_container {
     h2 {
       font-size: 3rem;
@@ -210,7 +213,8 @@ body {
   }
 }
 #endProduct {
-  opacity: 0;
+  position: relative;
+  right: -100vw;
   height: 100vh;
   img {
     width: 1rem;
@@ -227,7 +231,8 @@ body {
   }
 }
 #contact {
-  opacity: 0;
+  position: relative;
+  left: -100vw;
   h2 {
     font-size: 2.5rem;
   }

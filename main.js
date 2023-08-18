@@ -29,7 +29,9 @@ const macyContainer = document.querySelector(".macy");
 const welcomeContainerFluid = document.querySelector("#welcomeContainer");
 const offerContainer = document.querySelector("#offerContainer");
 const aboutContainer = document.querySelector("#aboutContainer");
-
+const endProduct = document.querySelector("#endProduct");
+const contact = document.querySelector("#contact");
+let _100vw = Math.round(window.innerWidth);
 const welcomeContainer = endProductArrowDown.addEventListener("click", (e) => {
   gradient.classList.add("d-none");
   endProductContainer.classList.add("fit-content");
@@ -40,24 +42,32 @@ window.addEventListener("load", () => {
   welcomeContainerFluid.style.left = "0% ";
   welcomeContainerFluid.style.transition = "0.7s";
 });
+const listOfElements = [offerContainer, aboutContainer, endProduct, contact];
 document.addEventListener("DOMContentLoaded", function () {
   const obsOptions = {
     root: null,
-    threshold: 0.5,
+    threshold: 0.4,
+    rootMargin: `0px ${_100vw}px 0px ${_100vw}px`,
   };
 
   const observer = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting) {
       const id = entries[0].target.id;
       const element = document.querySelector(`#${id}`);
-      element.style.opacity = 1;
-      element.style.transition = "0.9s";
-
+      const typeRight = window.getComputedStyle(element).right;
+      const typeLeft = window.getComputedStyle(element).left;
+      console.log();
+      if (typeRight === -_100vw + "px") {
+        element.style.right = "0vw";
+        element.style.transition = "0.9s";
+      } else if (typeLeft === -_100vw + "px") {
+        element.style.left = "0vw";
+        element.style.transition = "0.9s";
+      }
       observer.unobserve(entries[0].target);
-
-      // Tu umieść kod, który ma być wywołany, gdy element jest widoczny
     }
   }, obsOptions);
-
-  observer.observe(offerContainer);
+  listOfElements.forEach((element) => {
+    observer.observe(element);
+  });
 });
