@@ -25,7 +25,11 @@ const endProductArrowDown = document.querySelector("#endProduct_arrowDown");
 const gradient = document.querySelector(".gradient_top");
 const endProductContainer = document.querySelector("#endProduct");
 const macyContainer = document.querySelector(".macy");
+
 const welcomeContainerFluid = document.querySelector("#welcomeContainer");
+const offerContainer = document.querySelector("#offerContainer");
+const aboutContainer = document.querySelector("#aboutContainer");
+
 const welcomeContainer = endProductArrowDown.addEventListener("click", (e) => {
   gradient.classList.add("d-none");
   endProductContainer.classList.add("fit-content");
@@ -36,16 +40,24 @@ window.addEventListener("load", () => {
   welcomeContainerFluid.style.left = "0% ";
   welcomeContainerFluid.style.transition = "0.7s";
 });
-let options = {
-  root: document.querySelector("body"),
-  rootMargin: "0px",
-  threshold: 0.5,
-  isIntersecting: true,
-};
+document.addEventListener("DOMContentLoaded", function () {
+  const obsOptions = {
+    root: null,
+    threshold: 0.5,
+  };
 
-let observer = new IntersectionObserver((e) => {});
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      const id = entries[0].target.id;
+      const element = document.querySelector(`#${id}`);
+      element.style.opacity = 1;
+      element.style.transition = "0.9s";
 
-const elementsToObserve = Array.from(document.querySelectorAll(".animate"));
-elementsToObserve.forEach((element) => {
-  observer.observe(element);
+      observer.unobserve(entries[0].target);
+
+      // Tu umieść kod, który ma być wywołany, gdy element jest widoczny
+    }
+  }, obsOptions);
+
+  observer.observe(offerContainer);
 });

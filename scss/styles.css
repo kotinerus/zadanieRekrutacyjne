@@ -12131,6 +12131,9 @@ body .btn-green:hover {
   }
 }
 
+#offerContainer {
+  opacity: 0;
+}
 #offerContainer h2, #offerContainer .h2 {
   font-size: 2.5rem;
 }
@@ -12152,6 +12155,9 @@ body .btn-green:hover {
   text-decoration: underline;
 }
 
+#aboutContainer {
+  opacity: 0;
+}
 #aboutContainer .about_container h2, #aboutContainer .about_container .h2 {
   font-size: 3rem;
 }
@@ -12163,6 +12169,7 @@ body .btn-green:hover {
 }
 
 #endProduct {
+  opacity: 0;
   height: 100vh;
 }
 #endProduct img {
@@ -12175,6 +12182,9 @@ body .btn-green:hover {
   width: 100%;
 }
 
+#contact {
+  opacity: 0;
+}
 #contact h2, #contact .h2 {
   font-size: 2.5rem;
 }
