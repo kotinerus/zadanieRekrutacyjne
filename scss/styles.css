@@ -11997,6 +11997,9 @@ body .vh-50 {
 body .w-12_5 {
   width: 12.5% !important;
 }
+body .w-40 {
+  width: 40% !important;
+}
 body .w-70 {
   width: 70% !important;
 }
@@ -12149,6 +12152,16 @@ body .btn-green:hover {
   text-decoration: underline;
 }
 
+#aboutContainer .about_container h2, #aboutContainer .about_container .h2 {
+  font-size: 3rem;
+}
+#aboutContainer .about_container img {
+  width: 2rem;
+}
+#aboutContainer .about_container h5, #aboutContainer .about_container .h5 {
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 1200px) {
   #welcomeContainer {
     height: auto !important;
@@ -12193,44 +12206,21 @@ body .btn-green:hover {
   #offerContainer .panel {
     align-items: center !important;
   }
-}
-.about_container h2, .about_container .h2 {
-  font-size: 3rem;
-}
-.about_container .main_text {
-  font-size: 1rem;
-}
-.about_container .btn {
-  border: solid 1px white !important;
-  width: 45%;
-}
-.about_container img {
-  color: white;
-  width: 2rem;
-}
-.about_container img .about_container_text_area {
-  width: 75%;
-}
-.about_container h5, .about_container .h5 {
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 1200px) {
-  #about {
+  #aboutContainer {
     height: auto !important;
   }
-  #about .about_container_fluid h2, #about .about_container_fluid .h2 {
+  #aboutContainer .about_container_fluid h2, #aboutContainer .about_container_fluid .h2 {
     font-size: 3rem;
     text-align: center;
   }
-  #about .about_container_fluid h5, #about .about_container_fluid .h5 {
-    font-size: 0.9rem;
+  #aboutContainer .about_container_fluid h5, #aboutContainer .about_container_fluid .h5 {
+    font-size: 1.3rem;
   }
-  #about .about_container_fluid .main_text {
-    font-size: 1rem;
+  #aboutContainer .about_container_fluid a {
+    font-size: 1.3rem;
   }
-  #about .about_container_link img {
-    width: clamp(1rem, 7vh, 1.3rem);
+  #aboutContainer .about_container_fluid a img {
+    width: 1.3rem;
   }
 }
 #endProduct {

@@ -25,6 +25,9 @@ body {
   .w-12_5 {
     width: 12.5% !important;
   }
+  .w-40 {
+    width: 40% !important;
+  }
   .w-70 {
     width: 70% !important;
   }
@@ -191,6 +194,19 @@ body {
     }
   }
 }
+#aboutContainer {
+  .about_container {
+    h2 {
+      font-size: 3rem;
+    }
+    img {
+      width: 2rem;
+    }
+    h5 {
+      font-size: 1.3rem;
+    }
+  }
+}
 
 //  ##################################################
 //  SMALL STYLES - START
@@ -241,32 +257,7 @@ body {
       align-items: center !important;
     }
   }
-}
-
-.about_container {
-  h2 {
-    font-size: 3rem;
-  }
-  .main_text {
-    font-size: 1rem;
-  }
-  .btn {
-    border: solid 1px white !important;
-    width: 45%;
-  }
-  img {
-    color: white;
-    width: 2rem;
-    .about_container_text_area {
-      width: 75%;
-    }
-  }
-  h5 {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 1200px) {
-  #about {
+  #aboutContainer {
     height: auto !important;
     .about_container_fluid {
       h2 {
@@ -274,20 +265,17 @@ body {
         text-align: center;
       }
       h5 {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
       }
-      .main_text {
-        font-size: 1rem;
-      }
-    }
-    .about_container_link {
-      img {
-        width: clamp(1rem, 7vh, 1.3rem);
+      a {
+        font-size: 1.3rem;
+        img {
+          width: 1.3rem;
+        }
       }
     }
   }
 }
-//
 
 #endProduct {
   background-color: #dcc1ab;
