@@ -34,6 +34,7 @@ const contact = document.querySelector("#contact");
 let _100vw = Math.round(window.innerWidth);
 
 endProductArrowDown.addEventListener("click", (e) => {
+  console.log("TEST")
   gradient.classList.add("d-none");
   endProductContainer.classList.add("fit-content");
   macyContainer.classList.remove("h-75");
