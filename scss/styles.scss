@@ -233,11 +233,13 @@ body {
         }
         .swiper-button-prev {
           background-image: url(../icons/arrowLeft.svg);
-          left: 35%;
+          left: calc(35% + 1px);
+          bottom: 0%;
         }
         .swiper-button-next {
           background-image: url(../icons/arrowRight.svg);
-          right: 35%;
+          right: calc(35% + 1px);
+          bottom: 0%;
         }
       }
     }
