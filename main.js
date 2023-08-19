@@ -6,6 +6,7 @@ const offerContainer = document.querySelector("#offerContainer");
 const aboutContainer = document.querySelector("#aboutContainer");
 const endProductContainer = document.querySelector("#endProductContainer");
 const contactContainer = document.querySelector("#contactContainer");
+const navLinkButton = document.querySelectorAll(".nav-link");
 let _100vw = Math.round(window.innerWidth);
 const listOfElements = [
   offerContainer,
@@ -36,6 +37,22 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const backToDefault = () => {
+  welcomeContainer.style.position = "initial";
+
+  offerContainer.style.position = "initial";
+
+  aboutContainer.style.position = "initial";
+
+  endProductContainer.style.position = "initial";
+
+  contactContainer.style.position = "initial";
+};
+navLinkButton.forEach((element) => {
+  element.addEventListener("click", (e) => {
+    backToDefault();
+  });
+});
 endProductArrowDown.addEventListener("click", (e) => {
   gradient.classList.add("d-none");
   endProductContainer.style.height = "auto";
@@ -70,9 +87,5 @@ if (!navigator.userAgentData.mobile) {
     });
   });
 } else {
-  welcomeContainer.style.position = "initial";
-  offerContainer.style.position = "initial";
-  aboutContainer.style.position = "initial";
-  endProductContainer.style.position = "initial";
-  contactContainer.style.position = "initial";
+  backToDefault();
 }
