@@ -37,17 +37,6 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-function backToDefault() {
-  offerContainer.style.right = "0vw";
-  offerContainer.style.transition = "0";
-  aboutContainer.style.left = "0vw";
-  aboutContainer.style.transition = "0";
-  endProductContainer.style.right = "0vw";
-  endProductContainer.style.transition = "0";
-  contactContainer.style.left = "0vw";
-  contactContainer.style.transition = "0";
-}
-
 endProductArrowDown.addEventListener("click", (e) => {
   gradient.classList.add("d-none");
   endProductContainer.style.height = "auto";
@@ -82,5 +71,9 @@ if (!navigator.userAgentData.mobile) {
     });
   });
 } else {
-  backToDefault();
+  welcomeContainer.style.position = "static";
+  offerContainer.style.position = "static";
+  aboutContainer.style.position = "static";
+  endProductContainer.style.position = "static";
+  contactContainer.style.position = "static";
 }
