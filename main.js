@@ -1,3 +1,18 @@
+const endProductArrowDown = document.querySelector("#endProduct_arrowDown");
+const gradient = document.querySelector(".gradient_top");
+const macyContainer = document.querySelector(".macy");
+const welcomeContainer = document.querySelector("#welcomeContainer");
+const offerContainer = document.querySelector("#offerContainer");
+const aboutContainer = document.querySelector("#aboutContainer");
+const endProductContainer = document.querySelector("#endProductContainer");
+const contactContainer = document.querySelector("#contactContainer");
+let _100vw = Math.round(window.innerWidth);
+const listOfElements = [
+  offerContainer,
+  aboutContainer,
+  endProductContainer,
+  contactContainer,
+];
 const myInstance = new Macy({
   container: ".macy",
   trueOrder: true,
@@ -21,30 +36,16 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const endProductArrowDown = document.querySelector("#endProduct_arrowDown");
-const gradient = document.querySelector(".gradient_top");
-const endProductContainer = document.querySelector("#endProduct");
-const macyContainer = document.querySelector(".macy");
-
-const welcomeContainer = document.querySelector("#welcomeContainer");
-const offerContainer = document.querySelector("#offerContainer");
-const aboutContainer = document.querySelector("#aboutContainer");
-const endProduct = document.querySelector("#endProduct");
-const contact = document.querySelector("#contact");
-let _100vw = Math.round(window.innerWidth);
-
 endProductArrowDown.addEventListener("click", (e) => {
   gradient.classList.add("d-none");
   endProductContainer.classList.add("fit-content");
   macyContainer.classList.remove("h-75");
 });
+
 if (!navigator.userAgentData.mobile) {
-  window.addEventListener("load", () => {
-    welcomeContainer.style.left = "0% ";
-    welcomeContainer.style.transition = "0.7s";
-  });
-  const listOfElements = [offerContainer, aboutContainer, endProduct, contact];
   document.addEventListener("DOMContentLoaded", function () {
+    welcomeContainer.style.left = "0% ";
+    welcomeContainer.style.transition = "0.9s";
     const obsOptions = {
       root: null,
       threshold: 0.4,
@@ -55,16 +56,11 @@ if (!navigator.userAgentData.mobile) {
       if (entries[0].isIntersecting) {
         const id = entries[0].target.id;
         const element = document.querySelector(`#${id}`);
-        const typeRight = window.getComputedStyle(element).right;
-        const typeLeft = window.getComputedStyle(element).left;
-        console.log();
-        if (typeRight === -_100vw + "px") {
-          element.style.right = "0vw";
-          element.style.transition = "0.9s";
-        } else if (typeLeft === -_100vw + "px") {
-          element.style.left = "0vw";
-          element.style.transition = "0.9s";
-        }
+        const typeRight = window.getComputedStyle(element).right.split("px")[0];
+        typeRight < 0
+          ? (element.style.right = "0vw")
+          : (element.style.left = "0vw");
+        element.style.transition = "0.9s";
         observer.unobserve(entries[0].target);
       }
     }, obsOptions);
@@ -76,6 +72,6 @@ if (!navigator.userAgentData.mobile) {
   welcomeContainer.style.position = "initial";
   offerContainer.style.position = "initial";
   aboutContainer.style.position = "initial";
-  endProduct.style.position = "initial";
-  contact.style.position = "initial";
+  endProductContainer.style.position = "initial";
+  contactContainer.style.position = "initial";
 }

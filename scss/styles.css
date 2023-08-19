@@ -12170,29 +12170,29 @@ body .btn-green:hover {
   font-size: 1.3rem;
 }
 
-#endProduct {
+#endProductContainer {
   position: relative;
   right: -100vw;
   height: 100vh;
 }
-#endProduct img {
+#endProductContainer img {
   width: 1rem;
 }
-#endProduct .gradient_top {
+#endProductContainer .gradient_top {
   position: absolute;
   background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), rgba(220, 193, 171, 0.5));
   height: 100%;
   width: 100%;
 }
 
-#contact {
+#contactContainer {
   position: relative;
   left: -100vw;
 }
-#contact h2, #contact .h2 {
+#contactContainer h2, #contactContainer .h2 {
   font-size: 2.5rem;
 }
-#contact p {
+#contactContainer p {
   font-size: 1.3rem;
 }
 @media screen and (max-width: 1200px) {
@@ -12255,10 +12255,10 @@ body .btn-green:hover {
   #aboutContainer .about_container_fluid a img {
     width: 1.3rem;
   }
-  #endProduct h2, #endProduct .h2 {
+  #endProductContainer h2, #endProductContainer .h2 {
     text-align: center;
   }
-  #endProduct .macy {
+  #endProductContainer .macy {
     width: 75% !important;
   }
   #footer {
