@@ -6,7 +6,7 @@ const offerContainer = document.querySelector("#offerContainer");
 const aboutContainer = document.querySelector("#aboutContainer");
 const endProductContainer = document.querySelector("#endProductContainer");
 const contactContainer = document.querySelector("#contactContainer");
-const navLinkButton = document.querySelectorAll(".nav-link");
+const navLinkButton = document.querySelectorAll(".nav-bar-button");
 let _100vw = Math.round(window.innerWidth);
 const listOfElements = [
   offerContainer,
@@ -35,6 +35,15 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+const defaultFunction = () => {
+  listOfElements.forEach((element) => {
+    element.classList.add("position-static");
+    element.classList.remove("nav-bar-button");
+  });
+};
+navLinkButton.forEach((button) => {
+  button.addEventListener("click", defaultFunction());
 });
 
 endProductArrowDown.addEventListener("click", (e) => {
@@ -71,9 +80,5 @@ if (!navigator.userAgentData.mobile) {
     });
   });
 } else {
-  welcomeContainer.style.position = "static";
-  offerContainer.style.position = "static";
-  aboutContainer.style.position = "static";
-  endProductContainer.style.position = "static";
-  contactContainer.style.position = "static";
+  defaultFunction();
 }
