@@ -37,9 +37,12 @@ const swiper = new Swiper(".swiper", {
   },
 });
 const defaultFunction = () => {
+  welcomeContainer.add("position-static");
   listOfElements.forEach((element) => {
     element.classList.add("position-static");
-    element.classList.remove("nav-bar-button");
+  });
+  navLinkButton.forEach((button) => {
+    button.classList.remove("nav-bar-button");
   });
 };
 navLinkButton.forEach((button) => {
