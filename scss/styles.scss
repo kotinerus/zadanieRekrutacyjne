@@ -10,9 +10,10 @@ body {
     text-decoration: none;
     color: currentColor;
   }
-  .nav-bar-button:hover {
-    background-color: #7c8b9b;
+  a:hover {
+    color: black;
   }
+
   .dropdown-toggle::after {
     content: none;
   }
@@ -72,15 +73,87 @@ body {
     --bs-btn-color: #1b5b31;
     --bs-btn-bg: white;
     --bs-btn-border-color: #1b5b31;
+    --bs-btn-border-color: #1b5b31;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #393e46;
   }
   .btn-white:hover {
-    box-shadow: inset 0 0 0 1.5em #403e41;
+    box-shadow: inset 0 0 0 2em var(--bs-btn-hover-bg);
+    transition: 0.5s;
+    color: var(--bs-btn-hover-color);
+    img {
+      filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(78deg)
+        brightness(105%) contrast(100%);
+    }
+  }
+  .btn-transparent {
+    --bs-btn-color: black;
+    --bs-btn-bg: none;
+    --bs-btn-border-color: black;
+    --bs-btn-border-color: #393e46;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #393e46;
   }
 
+  .btn-transparent:hover {
+    box-shadow: inset 0 0 0 2em var(--bs-btn-hover-bg);
+    transition: 0.5s;
+    color: var(--bs-btn-hover-color);
+    img {
+      filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(78deg)
+        brightness(105%) contrast(100%);
+    }
+  }
+
+  .btn-beige {
+    --bs-btn-color: #1b5b31;
+    --bs-btn-bg: #dcc1ab;
+    --bs-btn-border-color: #1b5b31;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #393e46;
+  }
+  .btn-beige:hover {
+    box-shadow: inset 0 0 0 2em var(--bs-btn-hover-bg);
+    transition: 0.5s;
+    color: var(--bs-btn-hover-color);
+    img {
+      filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(78deg)
+        brightness(105%) contrast(100%);
+    }
+  }
   .btn-green {
     --bs-btn-color: white;
     --bs-btn-bg: #1b5b31;
+    --bs-btn-hover-color: white;
     --bs-btn-border-color: #1b5b31;
+    --bs-btn-hover-bg: #393e46;
+  }
+  .btn-green:hover {
+    box-shadow: inset 0 0 0 2em var(--bs-btn-hover-bg);
+    transition: 1s;
+    color: var(--bs-btn-hover-color);
+  }
+  .nav-bar-button {
+    --bs-btn-color: black;
+    --bs-btn-bg: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-border-color: #393e46;
+    --bs-btn-hover-bg: #393e46;
+    justify-content: center;
+  }
+  .nav-bar-button:hover {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 1em transparent;
+
+    // color: var(--bs-btn-hover-color);
+    // background-color: var(--bs-btn-hover-bg);
+  }
+  // .btn-green:hover {
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--bs-btn-color);
+    }
   }
 }
 
@@ -129,13 +202,14 @@ body {
       }
       .swiper-button-prev {
         background-image: url(../icons/arrowLeft.svg);
-        left: 70%;
+        left: calc(70% + 2px);
       }
       .swiper-button-next {
         background-image: url(../icons/arrowRight.svg);
         background-repeat: no-repeat;
         background-size: 3rem;
-        right: 0%;
+        right: calc(0% - 1px);
+        bottom: -1px;
       }
     }
     @media screen and (max-width: 1200px) {
@@ -183,14 +257,30 @@ body {
     .panel {
       padding-left: 5%;
       left: 5%;
+      --bs-btn-hover-bg: #1b5b31;
+      --bs-btn-hover-color: white;
       img {
         width: 3.5rem;
         height: 3.5rem;
       }
       .vector {
-        width: clamp(1rem, 7vh, 1.3rem);
+        width: 1.3rem;
       }
-      .text-green {
+      a {
+        color: #1b5b31;
+        text-decoration: underline;
+      }
+    }
+    .panel:hover {
+      box-shadow: inset 0 0 0 25rem var(--bs-btn-hover-bg);
+      transition: 0.25s;
+      color: var(--bs-btn-hover-color);
+      img {
+        filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(78deg)
+          brightness(105%) contrast(100%);
+      }
+      a {
+        color: var(--bs-btn-hover-color);
         text-decoration: underline;
       }
     }
@@ -212,6 +302,20 @@ body {
     h5 {
       font-size: 1.3rem;
     }
+    a {
+      --bs-btn-color: white;
+      --bs-btn-bg: #1b5b31;
+      --bs-btn-hover-color: white;
+      --bs-btn-border-color: #1b5b31;
+      --bs-btn-hover-bg: #393e46;
+      border: 1px solid white;
+    }
+
+    // .btn-green:hover {
+    //   box-shadow: inset 0 0 0 2em var(--bs-btn-hover-bg);
+    //   transition: 1s;
+    //   color: var(--bs-btn-hover-color);
+    // }
   }
 }
 #endProductContainer {

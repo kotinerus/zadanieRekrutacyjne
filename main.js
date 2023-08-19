@@ -37,22 +37,17 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const backToDefault = () => {
-  welcomeContainer.style.position = "initial";
+function backToDefault() {
+  offerContainer.style.right = "0vw";
+  offerContainer.style.transition = "0";
+  aboutContainer.style.left = "0vw";
+  aboutContainer.style.transition = "0";
+  endProductContainer.style.right = "0vw";
+  endProductContainer.style.transition = "0";
+  contactContainer.style.left = "0vw";
+  contactContainer.style.transition = "0";
+}
 
-  offerContainer.style.position = "initial";
-
-  aboutContainer.style.position = "initial";
-
-  endProductContainer.style.position = "initial";
-
-  contactContainer.style.position = "initial";
-};
-navLinkButton.forEach((element) => {
-  element.addEventListener("click", (e) => {
-    backToDefault();
-  });
-});
 endProductArrowDown.addEventListener("click", (e) => {
   gradient.classList.add("d-none");
   endProductContainer.style.height = "auto";
@@ -63,10 +58,10 @@ endProductArrowDown.addEventListener("click", (e) => {
 if (!navigator.userAgentData.mobile) {
   document.addEventListener("DOMContentLoaded", function () {
     welcomeContainer.style.left = "0% ";
-    welcomeContainer.style.transition = "0.9s";
+    welcomeContainer.style.transition = "0.5s";
     const obsOptions = {
       root: null,
-      threshold: 0.4,
+      threshold: 0.2,
       rootMargin: `0px ${_100vw}px 0px ${_100vw}px`,
     };
 
