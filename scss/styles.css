@@ -12275,7 +12275,7 @@ body .nav-bar-button:hover {
 }
 #endProductContainer .gradient_top {
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), rgba(220, 193, 171, 0.5));
+  background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), #dcc1ab);
   height: 100%;
   width: 100%;
 }
