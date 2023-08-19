@@ -12176,11 +12176,7 @@ body .btn-green:hover {
   height: 100vh;
   overflow: hidden;
 }
-#endProductContainer .macy a {
-  display: flex;
-  justify-content: center;
-}
-#endProductContainer .macy a img {
+#endProductContainer .macy img {
   width: 100%;
 }
 #endProductContainer img {

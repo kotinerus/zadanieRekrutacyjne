@@ -11,13 +11,11 @@
       crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./scss/styles.css" />
-    <link rel="stylesheet" href="lightbox2-2.11.3/dist/css/lightbox.css">
+    <link rel="stylesheet" href="./PhotoSwipe/dist/photoswipe.css">
     <title>Zadanie rekrutacyjne</title>
   </head>
 <body>
  
-  <a href="./imgsForLayout/Photo-2.png" data-lightbox="image-1" >Image #1</a>
-  <a href="./imgsForLayout/Photo-3.png" data-lightbox="image-1" >Image #1</a>
 <!-- ################################################## -->
 <!-- WELCOME CONTAINER -->
 <!-- ################################################## -->
@@ -166,16 +164,25 @@
         <p class="text-green mt-3">Realizacje </p>
         <h2 class="w-100">Nasze projekty</h2>
       </div>
-      <div class="container-fluid w-100 mt-1    macy" >
-        <a href="./imgsForLayout/Photo-8.png" data-lightbox="image-1" class="img-fluid" ><img src="./imgsForLayout/Photo-8.png" alt="" ></a>
-        <a href="./imgsForLayout/Photo-7.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-7.png" alt=""></a>
-        <a href="./imgsForLayout/Photo-6.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-6.png" alt=""></a>
-        <a href="./imgsForLayout/Photo-5.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-5.png" alt=""></a>
-        <a href="./imgsForLayout/Photo-4.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-4.png" alt=""></a>
-        <a href="./imgsForLayout/Photo-3.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-3.png" alt=""></a>
-        <a href="./imgsForLayout/Photo-2.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-2.png" alt=""></a>
-        <a href="./imgsForLayout/Photo-1.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-1.png" alt=""></a>
-        <a href="./imgsForLayout/Photo.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo.png" alt=""></a>
+      <div id="gallery" class="container-fluid w-100  mt-1 macy pswp-gallery" >
+        <a href="./imgsForLayout/Photo-8.png" data-pswp-width="451" 
+        data-pswp-height="601"><img src="./imgsForLayout/Photo-8.png" class="img-fluid"></a>
+        <a href="./imgsForLayout/Photo-7.png" data-pswp-width="452" 
+        data-pswp-height="338"  ><img src="./imgsForLayout/Photo-7.png" class="img-fluid"></a>
+        <a href="./imgsForLayout/Photo-6.png" data-pswp-width="451" 
+        data-pswp-height="451"  ><img src="./imgsForLayout/Photo-6.png" class="img-fluid"></a>
+        <a href="./imgsForLayout/Photo-5.png" data-pswp-width="451" 
+        data-pswp-height="452"  ><img src="./imgsForLayout/Photo-5.png" class="img-fluid"></a>
+        <a href="./imgsForLayout/Photo-4.png" data-pswp-width="452" 
+        data-pswp-height="452"  ><img src="./imgsForLayout/Photo-4.png" class="img-fluid"></a>
+        <a href="./imgsForLayout/Photo-3.png" data-pswp-width="451" 
+        data-pswp-height="603"  ><img src="./imgsForLayout/Photo-3.png" class="img-fluid"></a>
+        <a href="./imgsForLayout/Photo-2.png" data-pswp-width="451" 
+        data-pswp-height="338"  ><img src="./imgsForLayout/Photo-2.png" class="img-fluid"></a>
+        <a href="./imgsForLayout/Photo-1.png" data-pswp-width="452" 
+        data-pswp-height="601"  ><img src="./imgsForLayout/Photo-1.png" class="img-fluid"></a>
+        <a href="./imgsForLayout/Photo.png" data-pswp-width="451" 
+        data-pswp-height="338"  ><img src="./imgsForLayout/Photo.png" class="img-fluid"></a>
       </div>
       <div class="container-fluid gradient_top d-flex justify-content-center align-items-end p-0">
         <div id="endProduct_arrowDown" class="btn rounded-5 w-25 mb-3 border-black text-black ">Rozwiń <img src="./icons/arrow-down.svg" ></div>
@@ -232,10 +239,22 @@
       </div>
     </footer>
 >
-  <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   <script src="main.js"></script>
+  <script type="module">
+    import PhotoSwipeLightbox from './PhotoSwipe/dist/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery',
+      children: 'a',
+      pswpModule: () => import('./PhotoSwipe/dist/photoswipe.esm.js')
+    });
+    lightbox.init();
+    </script>
+    
+  
+ 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body> 
 </html>
