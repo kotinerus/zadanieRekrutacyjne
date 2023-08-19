@@ -403,7 +403,9 @@ body {
   }
   #aboutContainer {
     height: auto !important;
+
     .about_container_fluid {
+      width: 100% !important;
       h2 {
         font-size: 3rem;
         text-align: center;
@@ -432,5 +434,75 @@ body {
   }
   #footer {
     text-align: center !important;
+  }
+}
+//  ##################################################
+//  EXTRA SMALL STYLES
+//  ##################################################
+@media screen and (max-width: 576px) {
+  #welcomeContainer {
+    .welcome_container_fluid_content {
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      h5 {
+        font-size: 1rem;
+      }
+      .btn {
+        font-size: 1rem !important;
+      }
+      .swiper-button-next {
+        background-size: 2rem !important;
+      }
+      .swiper-button-prev {
+        background-size: 2rem !important;
+      }
+    }
+  }
+  #offerContainer {
+    height: 25% !important;
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      align-self: center;
+    }
+    h5 {
+      font-size: 1rem;
+      width: 100% !important;
+    }
+    p {
+      font-size: 1.3rem;
+      width: 75% !important;
+      text-align: start;
+    }
+    .p_text {
+      text-align: center;
+    }
+    .panel {
+      align-items: center !important;
+    }
+  }
+  #aboutContainer {
+    height: auto !important;
+
+    .about_container_fluid {
+      width: 100% !important;
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+      }
+      h5 {
+        font-size: 1rem;
+      }
+      a {
+        font-size: 1.3rem;
+        img {
+          width: 1.3rem;
+        }
+      }
+    }
   }
 }

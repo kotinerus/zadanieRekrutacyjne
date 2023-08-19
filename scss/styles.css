@@ -12337,6 +12337,9 @@ body .nav-bar-button:hover {
   #aboutContainer {
     height: auto !important;
   }
+  #aboutContainer .about_container_fluid {
+    width: 100% !important;
+  }
   #aboutContainer .about_container_fluid h2, #aboutContainer .about_container_fluid .h2 {
     font-size: 3rem;
     text-align: center;
@@ -12358,5 +12361,67 @@ body .nav-bar-button:hover {
   }
   #footer {
     text-align: center !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  #welcomeContainer .welcome_container_fluid_content h2, #welcomeContainer .welcome_container_fluid_content .h2 {
+    font-size: 2.5rem;
+  }
+  #welcomeContainer .welcome_container_fluid_content p {
+    font-size: 1rem;
+  }
+  #welcomeContainer .welcome_container_fluid_content h5, #welcomeContainer .welcome_container_fluid_content .h5 {
+    font-size: 1rem;
+  }
+  #welcomeContainer .welcome_container_fluid_content .btn {
+    font-size: 1rem !important;
+  }
+  #welcomeContainer .welcome_container_fluid_content .swiper-button-next {
+    background-size: 2rem !important;
+  }
+  #welcomeContainer .welcome_container_fluid_content .swiper-button-prev {
+    background-size: 2rem !important;
+  }
+  #offerContainer {
+    height: 25% !important;
+  }
+  #offerContainer h2, #offerContainer .h2 {
+    font-size: 3rem;
+    text-align: center;
+    align-self: center;
+  }
+  #offerContainer h5, #offerContainer .h5 {
+    font-size: 1rem;
+    width: 100% !important;
+  }
+  #offerContainer p {
+    font-size: 1.3rem;
+    width: 75% !important;
+    text-align: start;
+  }
+  #offerContainer .p_text {
+    text-align: center;
+  }
+  #offerContainer .panel {
+    align-items: center !important;
+  }
+  #aboutContainer {
+    height: auto !important;
+  }
+  #aboutContainer .about_container_fluid {
+    width: 100% !important;
+  }
+  #aboutContainer .about_container_fluid h2, #aboutContainer .about_container_fluid .h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #aboutContainer .about_container_fluid h5, #aboutContainer .about_container_fluid .h5 {
+    font-size: 1rem;
+  }
+  #aboutContainer .about_container_fluid a {
+    font-size: 1.3rem;
+  }
+  #aboutContainer .about_container_fluid a img {
+    width: 1.3rem;
   }
 }/*# sourceMappingURL=styles.css.map */
