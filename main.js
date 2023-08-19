@@ -17,7 +17,7 @@ const myInstance = new Macy({
   container: ".macy",
   trueOrder: true,
   waitForImages: false,
-  margin: 25,
+  margin: 50,
   columns: 3,
   breakAt: {
     1200: {
@@ -37,10 +37,10 @@ const swiper = new Swiper(".swiper", {
 });
 
 endProductArrowDown.addEventListener("click", (e) => {
-  console.log("TEST")
   gradient.classList.add("d-none");
-  endProductContainer.classList.add("fit-content");
-  macyContainer.classList.remove("h-75");
+  endProductContainer.style.height = "auto";
+  endProductContainer.style.transition = "0.9s";
+  endProductContainer.style.overflow = "visible";
 });
 
 if (!navigator.userAgentData.mobile) {

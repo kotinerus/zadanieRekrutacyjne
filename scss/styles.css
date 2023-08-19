@@ -12174,6 +12174,14 @@ body .btn-green:hover {
   position: relative;
   right: -100vw;
   height: 100vh;
+  overflow: hidden;
+}
+#endProductContainer .macy a {
+  display: flex;
+  justify-content: center;
+}
+#endProductContainer .macy a img {
+  width: 100%;
 }
 #endProductContainer img {
   width: 1rem;

@@ -11,12 +11,13 @@
       crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./scss/styles.css" />
-    <link rel="icon" href="./icons/logo-full-light.svg">
+    <link rel="stylesheet" href="lightbox2-2.11.3/dist/css/lightbox.css">
     <title>Zadanie rekrutacyjne</title>
   </head>
 <body>
-  
-
+ 
+  <a href="./imgsForLayout/Photo-2.png" data-lightbox="image-1" >Image #1</a>
+  <a href="./imgsForLayout/Photo-3.png" data-lightbox="image-1" >Image #1</a>
 <!-- ################################################## -->
 <!-- WELCOME CONTAINER -->
 <!-- ################################################## -->
@@ -160,21 +161,21 @@
 <!-- ################################################## -->
 <!-- ENDPRODUCT CONTAINER -->
 <!-- ################################################## -->
-    <section id="endProductContainer" class="container-fluid overflow-hidden d-flex flex-column align-items-center p-0 bg-beige" >
+    <section id="endProductContainer" class="container-fluid  d-flex flex-column align-items-center p-0 bg-beige" >
       <div class="container-fluid d-flex flex-column justify-content-center align-items-start w-75 h-40">
         <p class="text-green mt-3">Realizacje </p>
         <h2 class="w-100">Nasze projekty</h2>
       </div>
-      <div class="container-fluid w-100 h-75 mt-1  macy" >
-        <img src="./imgsForLayout/Photo-8.png" >
-        <img src="./imgsForLayout/Photo-7.png" >
-        <img src="./imgsForLayout/Photo-6.png" >
-        <img src="./imgsForLayout/Photo-5.png" >
-        <img src="./imgsForLayout/Photo-4.png" >
-        <img src="./imgsForLayout/Photo-3.png" >
-        <img src="./imgsForLayout/Photo-2.png" >
-        <img src="./imgsForLayout/Photo-1.png" >
-        <img src="./imgsForLayout/Photo.png" >
+      <div class="container-fluid w-100 mt-1    macy" >
+        <a href="./imgsForLayout/Photo-8.png" data-lightbox="image-1" class="img-fluid" ><img src="./imgsForLayout/Photo-8.png" alt="" ></a>
+        <a href="./imgsForLayout/Photo-7.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-7.png" alt=""></a>
+        <a href="./imgsForLayout/Photo-6.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-6.png" alt=""></a>
+        <a href="./imgsForLayout/Photo-5.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-5.png" alt=""></a>
+        <a href="./imgsForLayout/Photo-4.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-4.png" alt=""></a>
+        <a href="./imgsForLayout/Photo-3.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-3.png" alt=""></a>
+        <a href="./imgsForLayout/Photo-2.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-2.png" alt=""></a>
+        <a href="./imgsForLayout/Photo-1.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo-1.png" alt=""></a>
+        <a href="./imgsForLayout/Photo.png" data-lightbox="image-1" ><img src="./imgsForLayout/Photo.png" alt=""></a>
       </div>
       <div class="container-fluid gradient_top d-flex justify-content-center align-items-end p-0">
         <div id="endProduct_arrowDown" class="btn rounded-5 w-25 mb-3 border-black text-black ">Rozwiń <img src="./icons/arrow-down.svg" ></div>
@@ -194,6 +195,9 @@
         </div>
       </div>
     </section>
+<!-- ################################################## -->
+<!-- CONTACT CONTAINER MOBILE -->
+<!-- ################################################## -->
     <section class="container-fluid d-flex d-xl-none flex-column vh-50 bg-green text-white">
         <div class="container-fluid d-flex  justify-content-center align-items-end h-50 ">
           <h2 class="text-center">Zostańmy w kontakcie!<br>Znajdziesz nas na <i></i>Instagramie.</i></h2>
@@ -227,7 +231,8 @@
         <div class="col-xl-6 text-sm-center text-xl-end">made by<img src="./icons/logo-full-light.svg"></div>
       </div>
     </footer>
-  
+>
+  <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   <script src="main.js"></script>

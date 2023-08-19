@@ -216,6 +216,17 @@ body {
   position: relative;
   right: -100vw;
   height: 100vh;
+  overflow: hidden;
+  .macy {
+    a {
+      // width: 50%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
   img {
     width: 1rem;
   }
