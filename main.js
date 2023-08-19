@@ -37,6 +37,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 endProductArrowDown.addEventListener("click", (e) => {
+  console.log("TEST")
   gradient.classList.add("d-none");
   endProductContainer.classList.add("fit-content");
   macyContainer.classList.remove("h-75");
