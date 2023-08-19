@@ -37,7 +37,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 const defaultFunction = () => {
-  welcomeContainer.add("position-static");
+  welcomeContainer.classList.add("position-static");
   listOfElements.forEach((element) => {
     element.classList.add("position-static");
   });
