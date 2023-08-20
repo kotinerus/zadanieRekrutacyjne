@@ -45,9 +45,9 @@ const defaultFunction = () => {
     button.classList.remove("nav-bar-button");
   });
 };
-navLinkButton.forEach((button) => {
-  button.addEventListener("click", defaultFunction());
-});
+// navLinkButton.forEach((button) => {
+//   button.addEventListener("click", defaultFunction());
+// });
 
 endProductArrowDown.addEventListener("click", (e) => {
   gradient.classList.add("d-none");
