@@ -12292,6 +12292,7 @@ body .nav-bar-button:hover {
 }
 @media screen and (max-width: 1200px) {
   #welcomeContainer {
+    position: static !important;
     height: auto !important;
   }
   #welcomeContainer .welcome_container_fluid_content h2, #welcomeContainer .welcome_container_fluid_content .h2 {
@@ -12312,6 +12313,7 @@ body .nav-bar-button:hover {
     width: 75% !important;
   }
   #offerContainer {
+    position: static !important;
     height: 25% !important;
   }
   #offerContainer h2, #offerContainer .h2 {
@@ -12335,6 +12337,7 @@ body .nav-bar-button:hover {
     align-items: center !important;
   }
   #aboutContainer {
+    position: static !important;
     height: auto !important;
   }
   #aboutContainer .about_container_fluid {
@@ -12353,13 +12356,23 @@ body .nav-bar-button:hover {
   #aboutContainer .about_container_fluid a img {
     width: 1.3rem;
   }
+  #endProductContainer {
+    position: static !important;
+  }
   #endProductContainer h2, #endProductContainer .h2 {
     text-align: center;
   }
   #endProductContainer .macy {
     width: 75% !important;
   }
+  #endProductContainer .macy img {
+    width: 100%;
+  }
+  #contactContainerMobile {
+    position: static !important;
+  }
   #footer {
+    position: static !important;
     text-align: center !important;
   }
 }

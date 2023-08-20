@@ -358,6 +358,7 @@ body {
 //  ##################################################
 @media screen and (max-width: 1200px) {
   #welcomeContainer {
+    position: static !important;
     height: auto !important;
     .welcome_container_fluid_content {
       h2 {
@@ -380,6 +381,7 @@ body {
     }
   }
   #offerContainer {
+    position: static !important;
     height: 25% !important;
     h2 {
       font-size: 3rem;
@@ -403,6 +405,7 @@ body {
     }
   }
   #aboutContainer {
+    position: static !important;
     height: auto !important;
 
     .about_container_fluid {
@@ -423,17 +426,23 @@ body {
     }
   }
   #endProductContainer {
+    position: static !important;
     h2 {
       text-align: center;
     }
     .macy {
       width: 75% !important;
+      img {
+        width: 100%;
+      }
     }
   }
-  #contactContainer {
+  #contactContainerMobile {
+    position: static !important;
     //PLACEHOLDER
   }
   #footer {
+    position: static !important;
     text-align: center !important;
   }
 }
