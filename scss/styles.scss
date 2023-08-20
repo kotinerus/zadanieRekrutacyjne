@@ -431,10 +431,21 @@ body {
       text-align: center;
     }
     .macy {
+      width: 100% !important;
       width: 75% !important;
       img {
         width: 100%;
       }
+    }
+    .gradient_top {
+      position: absolute;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(#dcc1ab, 0),
+        rgba(#dcc1ab, 1)
+      );
+      height: 100% !important;
+      width: 100%;
     }
   }
   #contactContainerMobile {

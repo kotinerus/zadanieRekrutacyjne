@@ -12363,9 +12363,16 @@ body .nav-bar-button:hover {
     text-align: center;
   }
   #endProductContainer .macy {
+    width: 100% !important;
     width: 75% !important;
   }
   #endProductContainer .macy img {
+    width: 100%;
+  }
+  #endProductContainer .gradient_top {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), #dcc1ab);
+    height: 100% !important;
     width: 100%;
   }
   #contactContainerMobile {
