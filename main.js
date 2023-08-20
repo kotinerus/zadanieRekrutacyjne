@@ -36,6 +36,7 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
 const defaultFunction = () => {
   welcomeContainer.classList.add("position-static");
   listOfElements.forEach((element) => {
@@ -45,9 +46,6 @@ const defaultFunction = () => {
     button.classList.remove("nav-bar-button");
   });
 };
-// navLinkButton.forEach((button) => {
-//   button.addEventListener("click", defaultFunction());
-// });
 
 endProductArrowDown.addEventListener("click", (e) => {
   gradient.classList.add("d-none");
@@ -60,6 +58,7 @@ if (!navigator.userAgentData.mobile) {
   document.addEventListener("DOMContentLoaded", function () {
     welcomeContainer.style.left = "0% ";
     welcomeContainer.style.transition = "0.5s";
+
     const obsOptions = {
       root: null,
       threshold: 0.2,
