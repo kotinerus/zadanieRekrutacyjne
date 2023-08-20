@@ -335,7 +335,7 @@ body {
       rgba(#dcc1ab, 0),
       rgba(#dcc1ab, 1)
     );
-    height: auto;
+    height: 100vh !important;
     width: 100%;
   }
 }
@@ -437,16 +437,7 @@ body {
         width: 100%;
       }
     }
-    .gradient_top {
-      position: absolute;
-      background-image: linear-gradient(
-        to bottom,
-        rgba(#dcc1ab, 0),
-        rgba(#dcc1ab, 1)
-      );
-      height: 100% !important;
-      width: 100%;
-    }
+
   }
   #contactContainerMobile {
     position: static !important;
@@ -507,7 +498,7 @@ body {
     }
   }
   #aboutContainer {
-    height: auto !important;
+   
 
     .about_container_fluid {
       width: 100% !important;

@@ -12276,7 +12276,7 @@ body .nav-bar-button:hover {
 #endProductContainer .gradient_top {
   position: absolute;
   background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), #dcc1ab);
-  height: auto;
+  height: 100vh !important;
   width: 100%;
 }
 
@@ -12369,12 +12369,6 @@ body .nav-bar-button:hover {
   #endProductContainer .macy img {
     width: 100%;
   }
-  #endProductContainer .gradient_top {
-    position: absolute;
-    background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), #dcc1ab);
-    height: 100% !important;
-    width: 100%;
-  }
   #contactContainerMobile {
     position: static !important;
   }
@@ -12424,9 +12418,6 @@ body .nav-bar-button:hover {
   }
   #offerContainer .panel {
     align-items: center !important;
-  }
-  #aboutContainer {
-    height: auto !important;
   }
   #aboutContainer .about_container_fluid {
     width: 100% !important;
