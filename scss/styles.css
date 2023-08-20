@@ -12276,7 +12276,7 @@ body .nav-bar-button:hover {
 #endProductContainer .gradient_top {
   position: absolute;
   background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), #dcc1ab);
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
