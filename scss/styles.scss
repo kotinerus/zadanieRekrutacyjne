@@ -321,7 +321,7 @@ body {
 #endProductContainer {
   position: relative;
   right: -100vw;
-  height: 100vh;
+  height: 200vh;
   overflow: hidden;
   .macy {
     img {
@@ -338,7 +338,7 @@ body {
       rgba(#dcc1ab, 0),
       rgba(#dcc1ab, 1)
     );
-    height: 100vh !important;
+    height: 200vh !important;
     width: 100%;
   }
 }

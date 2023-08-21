@@ -12265,7 +12265,7 @@ body .nav-bar-button:hover {
 #endProductContainer {
   position: relative;
   right: -100vw;
-  height: 100vh;
+  height: 200vh;
   overflow: hidden;
 }
 #endProductContainer .macy img {
@@ -12277,7 +12277,7 @@ body .nav-bar-button:hover {
 #endProductContainer .gradient_top {
   position: absolute;
   background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0), #dcc1ab);
-  height: 100vh !important;
+  height: 200vh !important;
   width: 100%;
 }
 
