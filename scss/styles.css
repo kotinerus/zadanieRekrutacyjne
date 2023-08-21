@@ -11981,9 +11981,6 @@ body a {
   text-decoration: none;
   color: currentColor;
 }
-body a:hover {
-  color: black;
-}
 body .dropdown-toggle::after {
   content: none;
 }
@@ -12409,7 +12406,7 @@ body .nav-bar-button:hover {
     align-self: center;
   }
   #offerContainer h5, #offerContainer .h5 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 100% !important;
   }
   #offerContainer p {
@@ -12431,7 +12428,7 @@ body .nav-bar-button:hover {
     text-align: center;
   }
   #aboutContainer .about_container_fluid h5, #aboutContainer .about_container_fluid .h5 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   #aboutContainer .about_container_fluid a {
     font-size: 1.3rem;
