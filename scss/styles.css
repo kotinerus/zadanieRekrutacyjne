@@ -11981,6 +11981,9 @@ body a {
   text-decoration: none;
   color: currentColor;
 }
+body a:hover {
+  color: black;
+}
 body .dropdown-toggle::after {
   content: none;
 }
@@ -12067,6 +12070,10 @@ body .btn-transparent:hover {
 }
 body .btn-transparent:hover img {
   filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(78deg) brightness(105%) contrast(100%);
+}
+body .btn-nav {
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: white;
 }
 body .btn-beige {
   --bs-btn-color: #1b5b31;

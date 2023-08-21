@@ -10,6 +10,10 @@ body {
     text-decoration: none;
     color: currentColor;
   }
+  a:hover{
+    color: black;
+
+  }
 
   .dropdown-toggle::after {
     content: none;
@@ -48,6 +52,7 @@ body {
   .border-none {
     border: none !important;
   }
+
   .border-green {
     border: solid 1px #1b5b31 !important;
   }
@@ -103,6 +108,10 @@ body {
     }
   }
 
+  .btn-nav{
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: white;
+  }
   .btn-beige {
     --bs-btn-color: #1b5b31;
     --bs-btn-bg: #dcc1ab;
