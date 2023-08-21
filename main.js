@@ -7,6 +7,9 @@ const aboutContainer = document.querySelector("#aboutContainer");
 const endProductContainer = document.querySelector("#endProductContainer");
 const contactContainer = document.querySelector("#contactContainer");
 const navLinkButton = document.querySelectorAll(".nav-bar-button");
+const searchButtonRow = document.querySelector(".search_button_row");
+const searchButton = document.querySelector(".search_button");
+const inputSearch = document.querySelector(".inputSearch");
 let _100vw = Math.round(window.innerWidth);
 const listOfElements = [
   offerContainer,
@@ -58,6 +61,25 @@ if (!navigator.userAgentData.mobile) {
   document.addEventListener("DOMContentLoaded", function () {
     welcomeContainer.style.left = "0% ";
     welcomeContainer.style.transition = "0.5s";
+
+    searchButton.addEventListener("click", (e) => {
+      if (!searchButtonRow.classList.contains("col-xl-4")) {
+        navLinkButton.forEach((button) => {
+          button.classList.remove("d-xl-flex");
+        });
+        searchButtonRow.classList.add("col-xl-4");
+        searchButtonRow.style.transition = "0.5s";
+        inputSearch.classList.remove("d-none");
+      } else {
+        navLinkButton.forEach((button) => {
+          button.classList.add("d-xl-flex");
+        });
+        searchButtonRow.classList.remove("col-xl-4");
+        searchButtonRow.style.transition = "0s";
+        inputSearch.classList.add("d-none");
+        this.location.reload();
+      }
+    });
 
     const obsOptions = {
       root: null,
