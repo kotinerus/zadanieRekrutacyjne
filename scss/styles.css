@@ -12101,6 +12101,7 @@ body .btn-green:hover {
 body .nav-bar-button {
   --bs-btn-color: black;
   --bs-btn-bg: white;
+  --bs-btn-border-color: none;
   --bs-btn-hover-color: white;
   --bs-btn-border-color: #393e46;
   --bs-btn-hover-bg: #393e46;
@@ -12127,6 +12128,9 @@ body .nav-bar-button:hover {
 #welcomeContainer .welcome_container_fluid_nav img {
   height: 1.3rem;
   width: 1.3rem;
+}
+#welcomeContainer .welcome_container_fluid_nav .search_button .btn {
+  margin-bottom: 0 !important;
 }
 #welcomeContainer .welcome_container_fluid_content {
   height: 92%;

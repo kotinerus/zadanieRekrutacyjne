@@ -20,7 +20,7 @@
 <!-- WELCOME CONTAINER -->
 <!-- ################################################## -->
     <section id="welcomeContainer" class="container-fluid d-flex flex-column vh-100 p-0 g-0">
-      <div class="row justify-content-center align-items-center p-0 welcome_container_fluid_nav ">
+      <div class="row justify-content-start align-items-center p-0 welcome_container_fluid_nav ">
         <div class="col-7 ps-5 "><strong>giard</strong>design</div>
         <div class="col-5 d-flex d-xl-none justify-content-end align-items-center">
           <div class="dropdown">
@@ -33,9 +33,9 @@
             </ul>
           </div>
         </div>
-        <div class="col-xl-1 d-none d-xl-flex">
-          <div class="dropdown">
-            <button class="btn dropdown-toggle nav-bar-button" data-bs-toggle="dropdown">Oferta</button>
+        <div class="col-xl-1 d-none d-xl-flex nav-bar-button">
+          <div class="dropdown ">
+            <button class="btn dropdown-toggle border-none " data-bs-toggle="dropdown">Oferta</button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item nav-bar-button " href="#offerContainer">Projekty</a></li>
               <li><a class="dropdown-item nav-bar-button " href="#offerContainer">Wizualizacje</a></li>
@@ -47,14 +47,17 @@
         <div class="col-xl-1 d-none d-xl-flex  nav-bar-button"><a href="#endProductContainer">Realizacje</a></div>
         <div class="col-xl-1 d-none d-xl-flex  nav-bar-button"><a href="#contactContainer">Kontakt</a></div>
         <!-- MOŻNA COŚ DODAĆ -->
-        <div class="btn-group dropstart col-xl-1 d-none d-xl-flex ps-0 nav_link">
-          <button type="button" class="btn mb-2 p-0 " data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./icons/search.svg">
-          </button>
-          <ul class="dropdown-menu text-center">
-            <input  type="search" placeholder="Czego szukasz?"  class="m-3" ><button>Search</button>
-          </ul>
+        <div class="col-xl-1 btn d-none d-xl-flex justify-content-center search_button_row">
+         
+            <div class="col-8  d-none inputSearch"><input class="w-100" type="text"></div>
+            <div class="col-4 search_button"><img src="./icons/search.svg" class="align-self-center">
+          
+          </div>
+          
+           
+          
         </div>
+        
         <!-- MOŻNA COŚ DODAĆ -->
       </div>
 

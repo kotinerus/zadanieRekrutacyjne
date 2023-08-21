@@ -137,6 +137,7 @@ body {
   .nav-bar-button {
     --bs-btn-color: black;
     --bs-btn-bg: white;
+    --bs-btn-border-color: none;
     --bs-btn-hover-color: white;
     --bs-btn-border-color: #393e46;
     --bs-btn-hover-bg: #393e46;
@@ -170,6 +171,11 @@ body {
     img {
       height: 1.3rem;
       width: 1.3rem;
+    }
+    .search_button {
+      .btn {
+        margin-bottom: 0 !important;
+      }
     }
   }
   .welcome_container_fluid_content {
@@ -437,7 +443,6 @@ body {
         width: 100%;
       }
     }
-
   }
   #contactContainerMobile {
     position: static !important;
@@ -498,8 +503,6 @@ body {
     }
   }
   #aboutContainer {
-   
-
     .about_container_fluid {
       width: 100% !important;
       h2 {
