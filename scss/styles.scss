@@ -10,14 +10,10 @@ body {
     text-decoration: none;
     color: currentColor;
   }
-  a:hover{
+  a:hover {
     color: black;
-
   }
 
-  .dropdown-toggle::after {
-    content: none;
-  }
   .fit-content {
     height: fit-content !important;
   }
@@ -108,7 +104,7 @@ body {
     }
   }
 
-  .btn-nav{
+  .btn-nav {
     --bs-btn-hover-color: black;
     --bs-btn-hover-bg: white;
   }

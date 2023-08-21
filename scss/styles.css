@@ -11984,9 +11984,6 @@ body a {
 body a:hover {
   color: black;
 }
-body .dropdown-toggle::after {
-  content: none;
-}
 body .fit-content {
   height: -moz-fit-content !important;
   height: fit-content !important;
