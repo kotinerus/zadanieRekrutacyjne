@@ -57,7 +57,7 @@ endProductArrowDown.addEventListener("click", (e) => {
   endProductContainer.style.overflow = "visible";
 });
 
-if (!navigator.userAgentData.mobile) {
+if (navigator.userAgentData.mobile) {
   document.addEventListener("DOMContentLoaded", function () {
     welcomeContainer.style.left = "0% ";
     welcomeContainer.style.transition = "0.5s";

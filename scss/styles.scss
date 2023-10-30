@@ -65,7 +65,7 @@ body {
     margin-top: 4rem !important;
   }
   .btn {
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
   }
 
   .btn-white {
@@ -166,7 +166,6 @@ body {
 //  ##################################################
 #welcomeContainer {
   position: relative;
-  left: -100vw;
   .welcome_container_fluid_nav {
     height: 8%;
     font-size: 1.3rem;
@@ -257,7 +256,7 @@ body {
 #offerContainer {
   position: relative;
   // opacity: 0;
-  right: -100vw;
+
   h2 {
     font-size: 2.5rem;
   }
@@ -299,7 +298,6 @@ body {
 }
 #aboutContainer {
   position: relative;
-  left: -100vw;
 
   .about_container {
     height: 100% !important;
@@ -325,7 +323,7 @@ body {
 }
 #endProductContainer {
   position: relative;
-  right: -100vw;
+
   height: 200vh;
   overflow: hidden;
   .macy {
@@ -349,7 +347,6 @@ body {
 }
 #contactContainer {
   position: relative;
-  left: -100vw;
 
   h2 {
     font-size: 2.5rem;
@@ -384,7 +381,7 @@ body {
         font-size: 1rem;
       }
       .welcome_container_fluid_content_btn_row {
-        width: 75% !important;
+        // width: 100% !important;
       }
     }
   }

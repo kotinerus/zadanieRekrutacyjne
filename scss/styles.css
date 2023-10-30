@@ -12034,7 +12034,7 @@ body .mt-6 {
   margin-top: 4rem !important;
 }
 body .btn {
-  font-size: 1.3rem !important;
+  font-size: 1rem !important;
 }
 body .btn-white {
   --bs-btn-color: #1b5b31;
@@ -12120,7 +12120,6 @@ body .nav-bar-button:hover {
 
 #welcomeContainer {
   position: relative;
-  left: -100vw;
 }
 #welcomeContainer .welcome_container_fluid_nav {
   height: 8%;
@@ -12203,7 +12202,6 @@ body .nav-bar-button:hover {
 
 #offerContainer {
   position: relative;
-  right: -100vw;
 }
 #offerContainer h2, #offerContainer .h2 {
   font-size: 2.5rem;
@@ -12243,7 +12241,6 @@ body .nav-bar-button:hover {
 
 #aboutContainer {
   position: relative;
-  left: -100vw;
 }
 #aboutContainer .about_container {
   height: 100% !important;
@@ -12268,7 +12265,6 @@ body .nav-bar-button:hover {
 
 #endProductContainer {
   position: relative;
-  right: -100vw;
   height: 200vh;
   overflow: hidden;
 }
@@ -12287,7 +12283,6 @@ body .nav-bar-button:hover {
 
 #contactContainer {
   position: relative;
-  left: -100vw;
 }
 #contactContainer h2, #contactContainer .h2 {
   font-size: 2.5rem;
@@ -12313,9 +12308,6 @@ body .nav-bar-button:hover {
     width: 100%;
     align-self: center;
     font-size: 1rem;
-  }
-  #welcomeContainer .welcome_container_fluid_content .welcome_container_fluid_content_btn_row {
-    width: 75% !important;
   }
   #offerContainer {
     position: static !important;
